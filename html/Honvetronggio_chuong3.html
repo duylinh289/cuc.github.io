@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap v4.3.1.min.css">
+    <script src="../js/jquery v3.3.1.min.js"></script>
+    <script src="../js/bootstrap v4.3.1.min.js"></script>
+    <link href="../css/khungtruyen.css" rel="stylesheet" type="text/css" />
+    <title>Hồn Về Trong Gió - Chương 3</title>
+    <script>
+        $(document).ready(function () {
+            $("#maunen").click(function () {
+                var maunen = $("#maunen").val();
+
+                if (maunen == "Xam")
+                    $(".container").attr('style', 'background-color: #c2c2d6 !important');
+                else if (maunen == "Sang")
+                    $(".container").attr('style', 'background-color: white !important');
+                else if (maunen == "Bg1")
+                    $(".container").attr('style', ' background-image: url("../img/Background1.jpg") !important; color : #ffffff ');
+                else if (maunen == "Bg2")
+                    $(".container").attr('style', ' background-image: url("../img/Background2.jpg") !important;  color : #ffffff ');
+                else
+                    $(".container").attr('style', ' background-image: url("../img/Background.jpg") !important;  color : #ffffff ');
+            });
+            $("#Size").click(function () {
+                var size = $("#Size").val();
+
+                if (size == "bth")
+                    $("p").attr('style', 'font-size :default;');
+                else if (size == "bth-dam")
+                    $("p").attr('style', 'font-size :default; font-weight:bold;');
+                else if (size == "20")
+                    $("p").attr('style', 'font-size :20px; !important');
+                else if (size == "20-dam")
+                    $("p").attr('style', 'font-size :20px; font-weight:bold; !important');
+                else if (size == "18")
+                    $("p").attr('style', 'font-size :18px; !important');
+                else
+                    $("p").attr('style', 'font-size :18px; font-weight:bold; !important');
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="Index.html">Truyện Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Truyenma.html">Truyện ma</a>
+                        <a class="dropdown-item" href="Kiemhiep.html">Kiếm hiệp</a>
+                        <a class="dropdown-item" href="Trinhtham.html">Trinh thám</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tác giả
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Nguyenngocngan.html">Nguyễn Ngọc Ngạn</a>
+                        <a class="dropdown-item" href="#">Kim Dung</a>
+                        <a class="dropdown-item" href="#">Người Khăn Trắng</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Trangchu.html">Truyện mới</a>
+                        <a class="dropdown-item" href="Trangchu.html">Truyện hot</a>
+                        <a class="dropdown-item" href="Nhieunguoixem.html">Nhiều người xem</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Tên truyện">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style=" background-image: url('../img/Background1.jpg') !important; color :#ffffff">
+        <br>
+        <div align=center>
+            <h4 style="color :red" id="top">HỒN VỀ TRONG GIÓ</h4>
+            <h5>Chương 3</h5>
+            <a href="Honvetronggio_chuong2.html"><button type="button" class="btn btn-success">Chương trước</button>
+            </a>
+            <a href="Honvetronggio_chuong4.html"><button type="button" class="btn btn-success">Chương tiếp</button> </a>
+            <form>
+                <br>
+                Nền:
+                <select name="dropdown" id="maunen">
+                    <option value="Xam">Xám</option>
+                    <option value="Sang">Sáng</option>
+                    <option value="Bg1" selected>Background 1</option>
+                    <option value="Bg2">Background 2</option>
+                    <option value="Bg3">Background 3</option>
+                </select>
+                | Size chữ:
+                <select name="dropdown" id="Size">
+                    <option value="bth" selected>Mặc định</option>
+                    <option value="bth-dam">Mặc định - In đậm</option>
+                    <option value="18">18</option>
+                    <option value="18-dam">18- In đậm</option>
+                    <option value="20">20</option>
+                    <option value="20-dam">20 - In đậm</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <br>
+            <p>Bà Phú bước xuống sân , ông Phú nắm chặt cánh tay vợ đi từng bước chậm chạp sát bên cạnh. ông không dám
+                nhìn ra phía cổng , bởi ông hình dung hai cái bóng trắng vẫn đứng đó chờ đợi ông. Ra tới bên hông nhà ,
+                bà Phú đặt cây đèn trên bệ nước xi măng , lấy khăn nhúng ướt cho ông lau mặt , rồi đứng chờ ông đi tiểu
+                bên bệ chuối. Gió thổi xào xạc trong hốc cây , những tàn lá chuối run lên phần phật , ngọn đèn dâù tắt
+                phụt làm ông Phú lại một phen khiếp vía.<br />
+                <br />
+                Trăng thượng tuần soi mờ không gian , chẳng cần đèn ông cũng đã rành đường đi nước bước từng hốc cạnh
+                trên mãnh đất lâu đời của ông. Nhưng vì cảm giác hoản loạn , ông cần ngọn đèn cho đỡ sợ. Bà vợ nắm tay
+                ông dắt vào nhà , ngang qua mảnh sân , ông bổng nghe tiếng chó gầm gừ , rồi sủa vang ở ngoài cổng , ông
+                bấu chặt cánh tay vợ và hổn hển nói :<br />
+                <br />
+                − Mẹ con nó đang đi ngoài ấy !<br />
+                <br />
+                Bà Phú ngơ ngác hỏi :<br />
+                <br />
+                − Mẹ con ai ? ông làm sao thế ?<br />
+                <br />
+                ông Phú run rẫy đáp :<br />
+                <br />
+                − Bà không nghe tiếng chó sủa hay sao ?<br />
+                <br />
+                Quả thực ngoài ngõ , tiếng chó đang tru lên từng hồi như ai oán , và lại sủa lên. Và cứ mỗi lúc một xa
+                dần. ông Phú nhắc lại :<br />
+                <br />
+                − Đấy , bà có nghe thấy không ? Mẹ con nó dắt nhau đi ngoài đường.<br />
+                <br />
+                Bà Phú mệt mỏi nhắc lại :<br />
+                <br />
+                − Mẹ con ai mới được chứ lị ? Chó thì đêm nào mà chả sủa , có khi chó nó sủa bóng trăng , rồi có khi chó
+                nó sủa người đi đánh dặm. ông lẩn thẩn mất rồi , ở nhà quê mà đêm không có nghe tiếng chó thì chẳng lẽ
+                cả đêm người ta thức để canh trộm à ?<br />
+                <br />
+                Bà nói dứt câu, thì hai người cũng vừa lên tới bậc thềm , đẩy cửa bước vào nhà. Bà Phú bật diêm châm đèn
+                , vừa ngáp vừa bảo chồng :<br />
+                <br />
+                − Thôi, ngủ đi ông , đừng có giựt mình rồi thức dậy nữa. Cố ngủ đi một tí , trời sắp sáng rồi. Chốc nữa
+                tôi bảo con Nhàn đi mời thầy thuốc bắc , bốc thuốc cho ông.<br />
+                <br />
+                Rồi bà lên giường nằm quay mặt vào vách , nhắm mắt lại. ông Phú cũng nằm nhắm mắt , phủ chăn lên tận
+                ngực , nhưng tất nhiên không ngủ được. ông nằm lan man nghĩ ngợi một lúc khá lâu , rồi bỗng vùng dậy
+                ngồi tựa lưng vào vách là vì trong mớ trí tưởng hổn độn của quá khứ vừa ùa về trong trí ông . ông chợt
+                thấy lạnh toát toàn thân vì nhớ ra câu chuyện cũ đã lâu lắm , lâu đến nổi chẳng bao giờ ông nghĩ tới cho
+                đến đêm nay bổng loé lên trong đầu ông , dắt ông về một kỷ niệm của ngày tháng cũ.<br />
+                <br />
+                Dạo ấy , ông đã có ba con rồi , nhưng vẫn đam mê cái thú cô đầu trên phố huyện. Trò tiêu khiển cuối muà
+                này lôi cuốn ông không phải vì ông thích văn chương thơ phú , hay ghiền tiếng trống chầu kêu khách , mà
+                chỉ vì nhà hát có những cô hầu rượu trẻ trung lúc nào cũng tựa má , kề vai thân thiết với ông.<br />
+                <br />
+                Gọi là đào rượu bởi thiếu nữ ấy không phải là ca nhi , họ chỉ vì túng thiếu , phải bỏ nhà quê lên thành
+                phố. Tấp vào những nhà hát để làm công việc hầu rượu và quạt mát cho Quan viên đến thưởng thức.<br />
+                <br />
+                ông Phú là một trong những Quan viên lắm của nhiều tiền , thường xuyên ghé chơi vào những ngày rãnh rỗi.
+                ông có xe kéo riêng , từ làng Vạn Yên lên phố huyện chỉ mất khoảng ba tiếng đồng hồ. ông hách dịch lắm
+                nhưng phóng tay xài rộng nên chủ chứa rất quí trọng và ra sức chìu chuộng .<br />
+                <br />
+                Họ giao ông cho cô đào Tuyết mới ngoài 20 , vào nghề chưa được nữa năm. Tuyết phục dịch ông chu đáo lắm
+                , từ lời ăn tiếng nói , dáng đi dáng đứng , từ cái quạt nan cầm tay phe phảy liên tục cho ông, tới cốc
+                rượu nồng nâng lên miệng ông khi ông kê gối ngã đầu trên đùi cô. Sự chung đụng xác thịt dĩ nhiên không
+                thể dừng lại ở đó. Lần nào trước khi ra hát từ , ông cũng ngủ với cô một đêm , rồi mới chia tay hẹn gặp
+                chuyến tới .<br />
+                <br />
+                Bà Phú cũng biết cái thú của chồng , nhưng chuyện ấy không làm bà bận tâm nhiều lắm. Bởi ông làm ra tiền
+                , thì đi ngang về tắt để giải sầu một tháng đôi ba ngày cũng không có gì quá đáng đối với đàn ông thời
+                ấy.<br />
+                <br />
+                Bẵng đi một thời gian , ông Phú không lên phố huyện để chuẩn bị ra tranh chức ông Nghị. Gọi là tranh ,
+                nhưng có tranh với ai đâu , đó là thứ Nghị hách , Nghị gật , ngồi làm bù nhìn để diễn tuồng dân chủ cho
+                thực dân Pháp mà thôi. Quan tỉnh quan huyện hổ trợ sau lưng , là tất nhiên ông thắng cử , nghênh ngang
+                vào ngác trong các nghị trường. Có điều ông Phú cũng phải bỏ thì giờ học chữ Quốc ngữ và mấy câu tiếng
+                Tây , vì chẳng lẽ vào nghị trường mà không biết đọc , biết viết. ông say mê chức trọng quyền cao , thú
+                cô đầu dường như ông quên hẳn.<br />
+                <br />
+                Cô đào Tuyết ở phố huyện ngóng ông mãi không thấy tăm hơi. ông không lên, thì cô không có tiền mà nhà
+                chứa cũng mất nhiều lợi tức. Cô dọ hỏi cả tháng trời , mới biết ông ở làng Vạn Yên. Đắn đo mãi , cô đánh
+                liều thuê xe kéo về làng Vạn Yên. Tất nhiên cô không dám đến thẳng nhà , cô dừng chân ở ngoài cánh đồng
+                làng, mướn một đứa bé đang thả diều gần đó bảo nó vào gặp riêng ông Phú , nhắn ông ra gốc cây đa cho cô
+                gặp. Làng này thì già trẻ lớn bé , ai mà không biết mặt ông Phú , cô dặn đi dặn lại thằng bé rằng
+                :<br />
+                <br />
+                − Này , mày phải gặp cho bằng được ông Phú rồi hẳn đưa cái mảnh giấy này nhé ! nhớ chửa ? Đừng có bạ ai
+                cũng đưa , nhất là bà Phú thì nên lảng đi ngay. Phải đưa tận tay cho ông Phú, bảo là có cô Tuyết đang
+                đợi ở gốc cây đa đầu làng ấy. Thôi đi đi ! Nhanh chân lên một tí nhé ! Đưa giấy rồi ra đây tao cho thêm
+                tiền nhé !<br />
+                <br />
+                Thằng bé nhận tiền và mảnh giấy , bỏ luôn cái diều và chạy thẳng vào làng Vạn Yên. Nó cũng biết ông Phú
+                , nhưng là vì con nhà cùng đinh , nên chưa bao giờ đặt chân vào nhà ông. Nó đến trước cổng nhà ông ,
+                dừng lại thở , mồ hôi nhễ nhại khắp mặt và lên áo. Trong sân nhà ông hôm nay lố nhố cả chục người , rồi
+                lại có cả ô tô trên tỉnh xuống , làm nó càng sợ không dám vào.<br />
+                <br />
+                Khoảng thời gian này ông Phú bận lắm vì đang chạy chức nghị viên. Chờ đến hơn một tiếng đồng hồ, thằng
+                bé phân vân không biết làm sao. Quay lại gốc đa nói thật với Tuyết thì sợ cô đòi lại tiền mà xông vào
+                nhà gặp ông Phú thì liều lĩnh quá. Lơ phật ý ông, ông tát cho thì sưng mặt ; Nó cứ đứng sớ rớ mãi ở
+                ngoài cổng cho đến khi chị thuần xách giỏ đi mua thêm rượu , thấy cử chỉ lấm lét của nó , cất tiếng hỏi
+                :<br />
+                <br />
+                − Này, mày con nhà ai thế ? Làm gì mà cứ thập thò ở đây thế này ? Ăn trộm hả ? Xéo ngay không chết bây
+                giờ đấy nhé !<br />
+                <br />
+                Thằng bé sợ hãi đáp :<br />
+                <br />
+                − Cháu hỏi thăm ông Phú ạ !<br />
+                <br />
+                Chị Thuần mắng :<br />
+                <br />
+                − Ớ ! Cái thằng này láo thật ! Mày là đứa nào mà dám hỏi tới ông Phú ? Cút đi , ốm đòn bây giờ đó
+                !<br />
+                <br />
+                Thằng bé luống cuống đáp :<br />
+                <br />
+                − Dạ , cháu cần đưa cho ông Phú mảnh giấy này ạ !<br />
+                <br />
+                Nó rút trong cạp quần miếng giấy nhỏ đã nhoè nhoẹt mồ hôi , trao cho chị Thuần rồi bỏ chạy. Chị Thuần
+                không biết chữ nên đứng nhìn đăm đăm một lúc , rồi trở vào đưa cho anh Long , con trai đầu lòng của ông
+                Phú. Mảnh giấy nguệch ngoạc mấy chữ ông ra cho em gặp , em đang chờ ở gốc cây đa. Có việc cần. Tuyết.
+                Long đọc lướt nhanh rồi cất vào túi. Anh không biết Tuyết là ai mà lại đòi gặp bố mình. Anh lưỡng lự một
+                chút rồi vào nhà mời ông Phú ra mãi sau vườn rồi đưa cho ông mãnh giấy. ông Phú đang lúc say sưa với
+                công danh sự nghiệp , nghĩ đến tương lai ông nghị , nên lập tức nổi nóng nghiến răng bảo:<br />
+                <br />
+                − Cái con đĩ này ! Ai cho phép nó xuống tận đây để tìm tao ? Láo thật !<br />
+                <br />
+                Rồi ông vò mãnh giấy , quăng mạnh xuống gốc cây. Long ngước lên hỏi bố :<br />
+                <br />
+                − Cô ấy là ai mà tìm bố , bố có định ra gặp cô ấy không ?<br />
+                <br />
+                ông Phú gắt :<br />
+                <br />
+                − Gặp làm gì ? Nó là con đào rượu ở nhà hát trên phố huyện. Tao mà gặp là tao vả ngay cho mấy cái<br />
+                <br />
+                Dứt lời, ông toan quay vào nhà vì khách đang chờ ở bàn tiệc. Nhưng Long níu lại và ôn tồn nói :<br />
+                <br />
+                − Bố ạ ! Bố không ra gặp cô ấy , ngộ lỡ cô ấy đến thẳng đây rồi làm sao ? Bố sắp sang nghị viên. Hôm nay
+                nhà mình đông đủ Quan viên, chức sắc , chẳng may cô ấy đến làm ầm ỉ lên thì làm sao ?<br />
+                <br />
+                Chính ông Phú cũng vừa sực nghĩ ra điều ấy , đường hoạn lộ của ông đang thênh thang, lại để một đứa con
+                gái nghèo hèn làm vỡ chân ông. Nhưng ông vẫn trấn an con trai :<br />
+                <br />
+                − Nó chẳng dám đến đây đâu ! Có mà uống thuốc liều !<br />
+                <br />
+                Long tha thiết nói :<br />
+                <br />
+                − Bố ạ ! Cô ấy đã từ huyện xuống làng ta , thì sợ gì mà không đến thẳng đây ? Chả qua là cô ấy ngại mẹ
+                con thôi ! Nhưng nếu bố không ra gặp thì thể nào cô ấy cũng đến.<br />
+                <br />
+                ông Phú đăam chiêu cuối đầu , Long lại đề nghị :<br />
+                <br />
+                − Hay là bố để con chạy ra xem sao ! Con sẽ nói khéo bảo cô ấy đừng đến đây. Bảo cô cứ về đi rồi nay mai
+                bố sẽ lên huyện gặp.<br />
+                <br />
+                ông Phú ngượng ngùng nhìn con :<br />
+                <br />
+                − Ờ ! Tính thế cũng phải. Đi hộ bố đi. Bảo với nó dứt khoát từ nay không được lai vãng về đây nữa. Mai
+                kia bố lên huyện , bố sẽ cho nó một trận.<br />
+                <br />
+                Long gật đàu , cuối lượm lại mảnh giấy mà vừa rồi ông Phú đã vứt vào gốc cây. Rồi anh tất tả chạy ra
+                ngoài đầu làng. Từ xa anh đã thấy Tuyết đứng ở gốc cây , nón cầm tay phe phẩy , anh chạy lao lại thở
+                hồng hộc vì quảng đường khá xa mà anh thì cố lướt thời gian. Tuyết ngừng quạt, trố mắt nhìn Long nhưng
+                không dám hỏi. Long đứng lại, cố lấy bình tĩnh và lên tiếng :<br />
+                <br />
+                − Cô..cô là cô Tuyết phải không ạ ?<br />
+                <br />
+                − Vâng ạ , tôi ,đây ! Xin hỏi ông là....<br />
+                <br />
+                − Tôi tên là Long , bố tôi nhận được mảnh giấy của cô nhưng bận lắm , không ra gặp cô được.<br />
+                <br />
+                Dứt lời Long giơ mảnh giấy nhàu nát ra trước mặt Tuyết. Tuyết thất vọng ngồi bệch xuống đất trên nhánh
+                cây cổ thụ , cô buồn rầu hỏi :<br />
+                <br />
+                − Thế ông Phú có nhắn gì tôi nữa không ?<br />
+                <br />
+                Long vốn biết bố mình nóng tính , đôi khi không dằn được cơn giận , nên anh tội nghiệp bảo Tuyết :<br />
+                <br />
+                − Bố tôi chỉ bảo là từ nay tuyệt đối cô đừng có về làng tìm bố tôi. Bố tôi không bằng lòng như thế. Gặp
+                ở nhà hát chứ sao cô về tận đây? Nếu mẹ tôi biết thì làm sao ?<br />
+                <br />
+                Tuyết ứa nước mắt sụt sùi đáp :<br />
+                <br />
+                − Tôi đâu muốn lê thân về đây đâu , chẳng qua là vì tôi...tôi...tôi có..mang với bố anh , nên mới phải
+                xuống tìm chứ tự dưng lặn lội về đây để làm cái gì ? Có chửa thì tất nhiên nhà hát người ta đuổi tôi đi
+                rồi , chứ ai mà cho hầu rượu nữa ! Bây giờ thì bụng còn bé nên còn nán được , chứ tháng sau rồi tháng
+                sau nữa , dấu làm sao được với thiên hạ ? ông nghĩ coi , tôi thì tôi không nhà không cửa , nhà hát đuổi
+                tôi đi thì tôi chả biết làm sao để sống qua ngày để sinh đẻ? Vạn bất đắc dĩ tôi mới phải liều xuống đây
+                thưa thật với bố anh.<br />
+                <br />
+                Cô nghẹn ngào dừng lại, Long mủi lòng nhìn cô gái tội nghiệp , cô còn trẻ , lại có nhan sắc mặn mà , bố
+                anh say mê là phải , Long dè dặt hỏi :<br />
+                <br />
+                − Thế bây giờ cô tính thế nào ? Cô tìm gặp bố tôi dể làm gì ?<br />
+                <br />
+                Tuyết đã dự định trước , rành mạch kể :<br />
+                <br />
+                − Tôi bây giờ lâm vào bước đường cùng rồi , nên mới phải ngữa tay nhờ cậy bố anh. Đẻ xong, tôi sẽ đem
+                con tôi cho các bà sơ , rồi tôi đi làm thuê , làm mướn nuôi thân. Tôi không có dám làm phiền bố anh nữa
+                đâu. Tôi chỉ cần từ đây đến ngày ở cử thôi.<br />
+                <br />
+                Long hiểu ra , xúc động vì hoàn cảnh dỡ dang của cô gái do bố mình gây nên. Anh thọt tay vào túi nhưng
+                không có đồng bạc nào vì anh không hề dự trù trước , anh dịu dàng bảo :<br />
+                <br />
+                − Hay là thế này , tại bố tôi không biết là cô có mang với bố tôi , bây giờ cô cứ ngồi đợi đây để tôi
+                chạy về cho bố tôi hay , thể nào bố tôi cũng ra gặp cô.<br />
+                <br />
+                Tuyết thở phào nhẹ nhỏm :<br />
+                <br />
+                − Vâng..vâng , trăm sự nhờ anh. Anh đi nhanh hộ tôi một tí nhé , tôi chờ !<br />
+                <br />
+                Long toan chạy thì Tuyết lại thêm :<br />
+                <br />
+                − Ấy, ấy , nhược bằng như là bố anh bận quá không ra được để gặp tôi, thì nhờ anh nói khéo tôi chỉ xin
+                ít tiền thôi, để tôi sống qua ngày chờ ngày sinh nở thôi.<br />
+                <br />
+                Long gật đầu, rồi lập tức chạy lao vào làng , anh vẫn biết ông Phú ham thú trăng hoa , nhưng anh không
+                ngờ anh sắp có một đứa em cùng cha khác mẹ.<br />
+                <br />
+                Về tới nhà , mồ hôi mồ kê nhễ nhại , anh lại làm hiệu gọi ông Phú ra sau vườn và kể lại từ đầu đuôi ,
+                đồng thời giục bố ra gặp , nhưng ông Phú gạt đi :<br />
+                <br />
+                − Quân láo lếu , nó bảo nó có chửa à ? Đã chắc gì nó có chửa với tao ? Cái thứ mèo mã gà đồng , ngủ hết
+                người này đến người khác. Thấy tao có tiền lại giở trò vòi vĩnh. Kệ mẹ nó !<br />
+                <br />
+                Thế là ông quay gót vào nhà , Long chạy theo níu kéo:<br />
+                <br />
+                − Bố ơi ! Không phải con của bố thì đời nào cô ấy mò về tận đây?<br />
+                <br />
+                ông Phú phất tay :<br />
+                <br />
+                − Mày ngu lắm con ạ ! Làm cái nghề đào rượu như nó phải biết mánh khoé chứ ! Rồi mày xem, nó sẽ vác cái
+                bụng chữa đi vòi tiền của tất cả mọi thằng đàn ông đã đến cái nhà hát ấy. Gặp ai nó cũng sẽ bảo người
+                ấy. Tao già đầu rồi , tao không có dại.<br />
+                <br />
+                Long đứng thừ người một lúc rồi nói :<br />
+                <br />
+                − Nếu thế thì để con chạy ra bảo cho cô ấy biết để cô ấy quay về huyện trước trời tối. Bắt người ta chờ
+                khổ thân. Vả lại cô ấy đã có công mò về tận đây thì...cũng nên biếu cho cô ấy một ít tiền chứ bố !<br />
+                <br />
+                ông Phú gay gắt xua tay:<br />
+                <br />
+                − Đã bảo là kệ nó , mày cứ hay mua việc. Tao không ra , mày không ra thì nó sẽ phải về. Chửa biết chừng
+                nó sẽ đi tìm thằng khác để báo tin là có chửa. Tiền bạc tao không tiếc , nhưng giúp nó một lần, nó sẽ ăn
+                quen thấy mùi ăn mãi , phiền phức lắm.<br />
+                <br />
+                Long còn đang phân vân, thì có tiếng bà Phú gọi :<br />
+                <br />
+                − Anh Long đâu , mẹ nhờ một tí nào !<br />
+                <br />
+                ông Phú giục :<br />
+                <br />
+                − Vào xem mẹ mày cần cái gì.<br />
+                <br />
+                Long thở dài chạy vào nhà tìm mẹ , bà Phú gắt :<br />
+                <br />
+                − Con phải ngồi tiếp khách hầu rượu các Quan chứ ! Sao mà cứ thập thò ở dưới bếp là thế nào? Lên nhà
+                trên mau , đừng để người ta chờ !<br />
+                <br />
+                ông Phú trở lại bàn tiệc , nói cười oan oan với cốc rượu nồng , không mảy may bận tâm với Tuyết đang sốt
+                ruột chờ ông ngoài gốc cây đa. Riêng Long thì rất áy náy nhưng không thể rời bàn tiệc. Ngoài cánh đồng
+                Tuyết hết đứng lại ngồi , nỗi oán hận cả bố lẫn con mỗi lúc một dâng cao, cho đến khi mặt trời lặng ,
+                vẫn không thấy ông Phú hoặc Long ra gặp , cô đành thất thiểu thất vọng tìm đường trở về phố huyện.<br />
+                <br />
+                Thời gian cứ thế mà trôi , suốt cả nữa năm ông Phú tíu tít tiếp khách , lại biết mình sắp làm lớn , nên
+                không lên phố huyện hát cô đầu nữa. Nhưng người tính không bằng trời tính , phút chót tình thế biến
+                chuyển dồn dập. Cái chức nghị viên bị bãi bỏ sau khi ông tốn khá nhiều tiền để lót đường từ làng lên
+                tỉnh. ông buồn đứt ruột vì công danh trắc trở và vì tiếc tiền vung tay quá hào phóng. Có lẽ mả nhà ông
+                không phát về đường Quan lộc nữa.<br />
+                <br />
+                Ngồi buồn vài tháng sau, ông lại mò lên phố huyện đến nhà hát cũ. Chị chủ nhà ra đón ngậm ngùi bảo ông
+                :<br />
+                <br />
+                − Gớm , lâu quá mới lại thấy Quan bác quá bộ đến thăm chúng em đấy. Chúng em cứ nhắc đến Quan bác
+                mãi.<br />
+                <br />
+                ông Phú nghênh ngang bước vào và khinh bạc hỏi :<br />
+                <br />
+                − Không biết cô Tuyết của tôi bây giờ ra làm sao , chả biết có còn nhớ tôi hay quên bén mất rồi ?<br />
+                <br />
+                Chủ nhà trố mắt nhìn ông vì tưởng ông nói đùa , giây lâu chị mới kể :<br />
+                <br />
+                − Ủa , chả lẽ Quan bác chưa biết hay là sao ? Cô ấy nghĩ việc từ khi có mang tháng thứ ba rồi. Em thì
+                chả biết cô ấy phiêu bạt về đâu , mãi sau này mới nghe người ta nói là cô đẻ thiếu tháng ở nhà thương
+                thí ấy , rồi cả hai mẹ con chết rồi.<br />
+                <br />
+                ông Phú nghe qua chả có phản ứng gì , chủ nhà liền ngâm bốn câu ngữ , tức là bốn câu thơ mỡ đầu bài hát
+                nói của Dương khuê mà ngày trước ông Phú thích nghe mỗi khi nằm kề bên Tuyết.<br />
+                <br />
+                Lấy ai là kẻ đồng tâm<br />
+                <br />
+                Lấy ai là kẻ tri âm với nàng<br />
+                <br />
+                Đêm khuya luống nhưng đàng hoàng<br />
+                <br />
+                Người đi đâu vắng mà đàn còn đây ?<br />
+                <br />
+                ông Phú nghe xong , vẩn không tỏ một lời tiếc thương kẻ bạc mệnh. Chủ nhà biết ý nên cũng không nhắc
+                thêm chuyện ấy nữa , mãi đến khi tiển chân ông ra về , chủ nhà mới kể thêm :<br />
+                <br />
+                − Cái dạo mà cái Tuyết mới có mang , nó có xuống tận làng Vạn yên để tìm Quan bác để báo cho Quan bác
+                biết , nhưng mà nó chờ mãi mà Quan bác cứ lờ đi. Nó về đây khóc cả tuần lễ rối khăn gói ra đi. Từ đấy ,
+                em chả gặp nó bao giờ cho đến khi em nghe tin nó chết đấy.<br />
+                <br />
+                ông Phú khẻ nhíu mày nhưng không nói gì , chỉ biết sau lần ấy ông không lên phố huyện nữa , cũng ít khi
+                nào ông nghĩ đến người con gái bạc số đã từng kề cận nhiều đêm bên ông và cưu mang đứa con bất hạnh của
+                ông. Mãi đến hôm nay , hai cái bóng trắng hiện ra ngoài sân trong đêm , hai mẹ con dắt tay nhau trong
+                sương mù , thất thểu đi ra khỏi cổng nhà ông , mới làm ông giật mình liên tưởng đến chuyện cũ. ông buộc
+                miệng thảng thốt kêu lên nho nhỏ :<br />
+                <br />
+                − Hay là hai mẹ con nó hiện về báo oán?<br />
+                <br />
+                Bà Phú đang nằm thiu thiu, ngơ ngác quay lại hỏi :<br />
+                <br />
+                − Hai mẹ con nào ?<br />
+                <br />
+                ông Phú không dám tiết lộ chuyện cũ với vợ , nên làm bộ lảng sang chuyện khác , ông thản nhiên nói
+                :<br />
+                <br />
+                − Bà chưa ngủ à ? Tôi thì tôi mới chợp mắt lại nằm mê ngay lập tức.<br />
+                <br />
+                Bà Phú ngồi dậy vấn tóc và bùi ngùi nói :<br />
+                <br />
+                − Tôi thì tôi biết ông còn thức chứ chưa ngủ đâu. Có phải là ông đang nhớ đến con bé gì trên phố huyện ,
+                dạo mà ông mê đi hát cô đầu , đúng chưa ? ông ngủ với nó , rồi nó có mang , rồi nó về làng tìm ông mà
+                ông nhất định không ra gặp , có đúng thế không ?<br />
+                <br />
+                ông Phú kinh hãi hỏi lại vợ :<br />
+                <br />
+                − Sao...sao bà biết ?<br />
+                <br />
+                Bà Phú ngậm ngùi thở dài trách bằng giọng có pha nước mắt :<br />
+                <br />
+                − Tôi thì tôi biết từ dạo ấy cơ ! Thằng Long nó kể cho tôi nghe hết. ông ác lắm , con ông mà ông còn bỏ
+                , con bé bụng mang dạ chửa , lang thang đầu đường xó chợ , không cơm ăn , không áo mặc. Tất nhiên là nó
+                đẻ non rồi , hai mẹ con nó cùng chết đói. ông à ! đàn ông năm thê bảy thiếp là chuyện thường. Sao ông
+                không bảo với tôi một tiếng để tôi giúp nó ? Tôi không có muốn ông thất đức , con gái tôi nó phải gánh
+                chịu.<br />
+                <br />
+                Ngừng một chút cốt ý để chồng suy gẩm , bà Phú lại tiếp :<br />
+                <br />
+                − Đấy , thằng Long nó trách ông đấy ! Cho nên hôm nó có dịp lên phố huyện , tôi bảo là nó cố tìm cái con
+                bé ấy để dúi cho nó ít tiền. Nhưng mà nhà chủ đuổi đi lâu lắm rồi, chả biết nó đi đâu?<br />
+                <br />
+                ông Phú nằm yên không biết nói sao. Giờ này ông vẫn không hối hận vì đã xử bạc với Tuyết. ông chỉ sợ hồn
+                ma hai mẹ con về báo oán , nên ông tự bào chửa :<br />
+                <br />
+                − Bà bảo tôi ác là oan cho tôi. Cái hôm nó về chờ tôi ở gốc cây đa ngoài cánh đồng , tôi không ra là vì
+                đã chắc gì cái thai trong bungnó là con tôi ? Đào rượu ở nhà cô đầu thì nay tiếp người này , mai tiếp
+                người khác. Biết nó có mang với ai ?<br />
+                <br />
+                Bà Phú không nói gì nữa. Chuyện này bà đã dấu kín bao nhiêu năm , bà vẫn thầm trách chồng là người nhẫn
+                tâm. Bà không nói chỉ vì bà không muốn các con biết thêm những cái xấu của bố chúng nó, nhất là cô con
+                gái. Bà ngồi lên đẩy cái liếp cửa sổ cho không khí trong lành ngoài vườn luà vào , nhưng trời vẫn còn
+                tối quá , nên bà lại hạ xuống. Làng xóm còn im lìm ngủ yên , gà chưa gáy tiếng nào. Dưới bếp chưa có
+                tiếng động , chứng tỏ chị Thuần chưa dậy pha trà , bà Phú buồn rầu bước xuống , bưng cây đèn ra hiên để
+                xuống bếp , bà nói :<br />
+                <br />
+                − Thôi ông ngủ đi một tí để lấy sức , tôi xuống tôi đun ấm nước.<br />
+                <br />
+                − Sao không gọi cái Thuần nó dậy bảo nó đun ?<br />
+                <br />
+                − Thôi , còn sớm mà ! để cho nó ngủ. Đằng nào tôi cũng dậy rồi.<br />
+                <br />
+                Bà bước ra ngoài, ông Phú nằm một mình nhớ lại từng chi tiết cái hôm Long trao cho ông mảnh giấy , rồi
+                giục ông ra gốc đa gặp Tuyết. Chuyện cũ bao nhiêu năm qua giờ này bổng sống lại trong ông. Nhưng để khỏi
+                áy náy, ông tự bảo mình :<br />
+                <br />
+                − Đã chắc gì đứa bé trong bụng là con mình !<br />
+                <br />
+                ông vừa dứt lời thì bổng thấy cơn lạnh từ trên vách ùa vào xối xả như gió bấc muà đông. Lập tức con mèo
+                đen của ông kêu thét lên và lao mạnh vào liếp cửa sổ. Ngay sau đấy có tiếng gõ cửa liên hồi, ông giật
+                thót người run lên bần bật. Tiếng gõ không phải ở trước cửa như đêm qua mà ngay trên liếp cửa sổ , sát
+                cái giường ông đang nằm. ông co rúm người , cố nhích ra xa , rồi ú ớ gọi vợ. Con mèo vẫn cào mạnh, vẫn
+                gầm gừ , nhảy lên tuột xuống. ông cố kêu nhưng cổ ông dường như bị bóp nghẹt khiến ông không thốt được
+                một tiếng , chỉ nghe tiếng âm thanh nghèn nghẹn như người sắp tắt thở. Tiếng gõ trên cửa sổ vẫn vang lên
+                , rồi giọng nói con nít như rót vào tai ông :<br />
+                <br />
+                − Xin ông bát cơm...xin ông bát cơm...Con đói quá...<br />
+                <br />
+                ông Phú lết mãi mới ra được mép giường rồi ngã lăn xuống đất , ông lồm cồm bò dậy thì bên ngoài cửa sổ
+                có tiếng nói của người đàn bà mà ông đã nghe đêm qua :<br />
+                <br />
+                − Về con ơi..về với mẹ...về con...<br />
+                <br />
+                Mấy tiếng ấy cứ lập đi lập lại xa dần , nhỏ dần cho đến khi ông không còn nghe thấy nữa. ông há hốc mồm
+                , hai tay ôm cái gối , từ từ đứng dậy. Vừa lúc ấy cánh cửa trước mở tung , ông thét lên kinh
+                hãi....Nhưng đó là bà vợ vừa từ dưới bếp đi lên , bà bực bội cằn nhằn :<br />
+                <br />
+                − Ông làm cái gì mà tôi giật mình ? Đêm hôm mà cứ hét ầm lên là thế nào?<br />
+                <br />
+                Thấy ông ngơ ngác đứng giữa nhà, bà nói tiếp :<br />
+                <br />
+                − Sao mà tôi đi có một tí mà ông không dám nằm một mình là sao ?<br />
+                <br />
+                ông Phú hổn hển đáp :<br />
+                <br />
+                − Mẹ con nó lại vừa mới hiện về bà ơi !<br />
+                <br />
+                − Hiện về đâu ? Bình tĩnh cái đã nào !<br />
+                <br />
+                − Nó đứng ngay sau cái cửa sổ , tôi hãi quá mới phải vùng dậy , toan xuống bếp tìm bà , bà cho tôi cốc
+                nước.<br />
+                <br />
+                Bà Phú dịu dọng tội nghiệp :<br />
+                <br />
+                − Tôi đang đun. Nước trong ấm ủ thì hết sạch rồi. Thôi xuống bếp uống tạm miếng nước mưa đi vậy !<br />
+                <br />
+                Vừa nói , bà vừa bước ra ngoài , ông Phú lẽo đẽo đi sau ; Nhưng khi ra thềm nhà , ông Phú đứng khựng lại
+                ngay , là vì dưới ánh trăng mờ ông nhìn thấy hai cái bóng trắng , hai mẹ con dắt nhau ở cuối sân, lầm
+                lũi đi ra ngõ. ông giật tay bà Phú , chỉ ra cổng và hoảng hốt kêu :<br />
+                <br />
+                − Chúng nó kia kià , thấy không ? Bà....bà có thấy hai mẹ con nó không ?<br />
+                <br />
+                Bà Phú lắc đầu , giờ này bà Phú cũng mơ hồ đoán rằng hồn ma hai mẹ con về chọc ghẹo chồng bà, nhưng đồng
+                thời bà cũng tin rằng có thể tâm trí chồng bà khủng hoảng trầm trọng cho nên có ít chiết ra nhiều. Người
+                hoảng loạn thì rất dễ thấy ma , bởi nhìn thấy gì cũng tưởng là ma , bà chán nản nói :<br />
+                <br />
+                − Tôi có thấy cái gì đâu !<br />
+                <br />
+                Bà vừa dứt lời thì ngoài cổng có chó tru lên thảm thiết , rồi gầm gừ sủa vang rồi cứ thế xa dần , nhỏ
+                dần , cho đến khi im hẳn trả lại sự yên tỉnh cho màn đêm. ông Phú run run nói :<br />
+                <br />
+                − Chúng nó đấy , mẹ con chúng nó đấy !<br />
+                <br />
+                Vào bếp , ông Phú bưng cái gáo đựng nước mưa tu ừng ực rồi ông lắc đầu mệt mỏi bảo vợ :<br />
+                <br />
+                − Bà ơi , chắc phải bán bỏ căn nhà này đi chỗ khác bà ơi !<br />
+                <br />
+                Bà Phú gạt phắt đi :<br />
+                <br />
+                − Cái gì ? Mồ mã tổ tiên của ông ở cả đây mà, bán nó sao được ? Với lại nếu quả thực ông thấy ma đó ,
+                thì ma đi theo người , ông đi đâu cho thoát ?<br />
+                <br />
+                Đối với ông Phú lúc này thì mồ mã tổ tiên cũng không còn quan trọng nữa , và căn nhà đồ sộ này ông cũng
+                chẳng thấy tiếc chút nào vì ông sợ quá mức rồi. Đi đâu cũng được , miễn là hai cái bóng trắng kia đừng
+                rượt theo quấy phá ông , ông lắc đầu bảo vợ :<br />
+                <br />
+                − Tôi không ở đây được nữa , nhà này bây giờ là nhà ma. ở với ma làm sao được ?<br />
+                <br />
+                Bà Phú tội nghiệp bảo chồng :<br />
+                <br />
+                − Thôi hay là như vầy đi, ông sang ở tạm bên thằng Long vài hôm xem sao ?<br />
+                <br />
+                Bà Phú đưa đề nghị này là một sự bất đắc dĩ vì sợ chồng khủng hoảng quá mà kiệt sức , chứ trong thâm tâm
+                bà không muốn mang phiền toái sang nhà con trai. Vợ chồng nó bận buôn bán lại vướng hai đứa con còn nhỏ.
+                Chồng bà qua đó rồi cả đêm cứ kêu thét lên như thế này thì chỉ làm khổ con trai và hai đứa cháu nội mà
+                thôi. Riêng ông Phú thì gật đầu đồng ý ngay :<br />
+                <br />
+                − Ừ , để tôi sang ở bên thằng Long , chứ ở bên đây chắc tôi chết mất !<br />
+                <br />
+                Bước sang ngày thứ ba, ông Phú hốc hác thấy rõ. Hai đêm thức trắng , ban ngày cố ăn một hai bát cơm mà
+                nuốt không vào , người ông phờ phạc , hai mắt trũng sâu , mất hết thần khí. Bước đi lảo đảo như sẳn sàng
+                quỵ ngã bất cứ lúc nào. Với ông bây giờ ngày đi quá nhanh , cứ đến lúc mặt trời lặn là ông bắt đầu lo
+                sợ. Bà Phú bảo cái Nhàn chạy đi gọi Long để bàn cái việc đón ông Phú sang ở tạm bên ấy , nhưng hôm ấy
+                Long lên tỉnh chưa về , còn bà Phú và thằng Hoành thì qua nhà cô con gái thứ hai là Kim vì tin vào luật
+                vay trả cha ăn mặn , con khát nước, nên bà rất lo cho hai cô con gái.</p>
+        </div>
+        <br>
+        <div align=center>
+            <a href="#top"><button type="button" class="btn-success">TOP</button></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer style="background-color: #ebccff">
+    <hr width="90%">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p>Trang Web Đọc Truyện Online | <a href="Trangchu.html">Trang chủ</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>

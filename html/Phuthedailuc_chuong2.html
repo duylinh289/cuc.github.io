@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap v4.3.1.min.css">
+    <script src="../js/jquery v3.3.1.min.js"></script>
+    <script src="../js/bootstrap v4.3.1.min.js"></script>
+    <link href="../css/khungtruyen.css" rel="stylesheet" type="text/css" />
+    <title>Phụ Thể Đại Lục - Chương 2</title>
+    <script>
+        $(document).ready(function () {
+            $("#maunen").click(function () {
+                var maunen = $("#maunen").val();
+
+                if (maunen == "Xam")
+                    $(".container").attr('style', 'background-color: #c2c2d6 !important');
+                else if (maunen == "Sang")
+                    $(".container").attr('style', 'background-color: white !important');
+                else if (maunen == "Bg1")
+                    $(".container").attr('style', ' background-image: url("../img/Background1.jpg") !important; color : #ffffff ');
+                else if (maunen == "Bg2")
+                    $(".container").attr('style', ' background-image: url("../img/Background2.jpg") !important;  color : #ffffff ');
+                else
+                    $(".container").attr('style', ' background-image: url("../img/Background.jpg") !important;  color : #ffffff ');
+            });
+            $("#Size").click(function () {
+                var size = $("#Size").val();
+
+                if (size == "bth")
+                    $("p").attr('style', 'font-size :default;');
+                else if (size == "bth-dam")
+                    $("p").attr('style', 'font-size :default; font-weight:bold;');
+                else if (size == "20")
+                    $("p").attr('style', 'font-size :20px; !important');
+                else if (size == "20-dam")
+                    $("p").attr('style', 'font-size :20px; font-weight:bold; !important');
+                else if (size == "18")
+                    $("p").attr('style', 'font-size :18px; !important');
+                else
+                    $("p").attr('style', 'font-size :18px; font-weight:bold; !important');
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="Index.html">Truyện Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Truyenma.html">Truyện ma</a>
+                        <a class="dropdown-item" href="Kiemhiep.html">Kiếm hiệp</a>
+                        <a class="dropdown-item" href="Trinhtham.html">Trinh thám</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tác giả
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Nguyenngocngan.html">Nguyễn Ngọc Ngạn</a>
+                        <a class="dropdown-item" href="#">Kim Dung</a>
+                        <a class="dropdown-item" href="#">Người Khăn Trắng</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Truyện mới</a>
+                        <a class="dropdown-item" href="#">Truyện hot</a>
+                        <a class="dropdown-item" href="Nhieunguoixem.html">Nhiều người xem</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Tên truyện">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style=" background-image: url('../img/Background1.jpg') !important; color :#ffffff">
+        <br>
+        <div align=center>
+            <h4 style="color :red" id="top">PHỤ THỂ ĐẠI LỤC</h4>
+            <h5>Chương 2 - Tiền phi pháp</h5>
+            <a href="Phuthedailuc_chuong1.html"><button type="button" class="btn btn-success">Chương trước</button> </a>
+            <button type="button" class="btn btn-success" disabled="disabled">Chương tiếp</button>
+            <form>
+                <br>
+                Nền:
+                <select name="dropdown" id="maunen">
+                    <option value="Xam">Xám</option>
+                    <option value="Sang">Sáng</option>
+                    <option value="Bg1" selected>Background 1</option>
+                    <option value="Bg2">Background 2</option>
+                    <option value="Bg3">Background 3</option>
+                </select>
+                | Size chữ:
+                <select name="dropdown" id="Size">
+                    <option value="bth" selected>Mặc định</option>
+                    <option value="bth-dam">Mặc định - In đậm</option>
+                    <option value="18">18</option>
+                    <option value="18-dam">18- In đậm</option>
+                    <option value="20">20</option>
+                    <option value="20-dam">20 - In đậm</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <br>
+            <p>Người chưa vào ngõ mà tiếng hét đã vang vọng phân khu Dưỡng Thú Hồn nơi nghỉ ngơi của gia nhân và cũng là
+                nơi mà mấy gia gia họ ở <br><br>- Chu Phát!!!!!!!!! Lết ra đây cho ta!!!! -tiếng hét là của Triệu Đại
+                mặt đằng đằng sát khí <br><br>Với tộc độ ánh sáng một thanh niên mặc áo xanh khuôn mặt điềm đạm,sóng mũi
+                cao vút mang theo vẻ đẹp trai lãng tử ba chân bốn cẳng chạy ra,theo sau thanh niên đó là một bé gái
+                thoạt trông cỡ chừng 14 15 tuổi khuôn mặt xinh đẹp như hoa chớm nở pha chút ngơ ngác chạy ra theo sau
+                <br><br>- Dạ …gia gia gọi con! <br><br>Cốp …cốp …cốc liên tục là những cái cốc đầu của Triệu Đại
+                <br><br>- ui ….úi ….da …..gia gia sao đánh con chứ ….oái …thôi ….mà!!!<br><br>- Ngươi thân là đại ca
+                thấy đệ mình làm bậy không ngăn cản còn đứng xem cổ vũ hả hả! <br><br>Nghiến răng Triệu Đại kí thêm vài
+                cái miệng không ngừng la mắng <br><br>- 2 đứa ngươi sáng mai bắt đầu đi dọn dẹp Dưỡng Thú Hồn một tuần
+                cho ta! Cấm bước chân ra khỏi Dưỡng Thú Hồn nửa bước! Mộng Nhi con quản 2 đứa nó cho ta,đứa nào cãi lệnh
+                cứ nói với gia gia! – Triệu Đại quay qua nói với bé gái khuôn mặt trở nên hoà hoãn một chút<br><br>- Dạ!
+                Gia gia người đi ăn cơm đi! Con dọn sẳn chờ gia gia rồi! -nói xong bé gái lập tức chạy ra nắm một cánh
+                tay Triệu Đại nũng nịu kéo vào sát người như sợ Triệu Đại lại đánh 2 thằng anh nữa <br><br>- Hừ!!! Mộng
+                Nhi ngoan,đi chúng ta đi ăn cơm, 2 thằng bây ăn cơm chưa? <br><br>- Dạ chưa!!!! -đồng thanh đồng thủ đáp
+                <br><br>- Nhịn! <br><br>Đáp gỏn lọn Triệu Đại quay lưng bỏ đi vô nhà,Mộng Nhi vẫn trước sau ôm cánh tay
+                Triệu Đại không buông,trước lúc cùng đi còn quay đầu lại le lưỡi trêu chọc 2 thằng quậy kia <br><br>Khỏi
+                phải nói khuôn mặt của Chu Phát xám xịt,ánh mắt oán hận nhìn Long Phi,hắn đang chờ Triệu Đại đi mất là
+                một sống một chết với Long Phi,đưa bàn tay lên giao vào nhau bẻ răng răng rắc chuẩn bị động thủ
+                <br><br>- Đại ca ….ta không cố ý khai ra ngươi đâu ….! À đừng lo nãy đệ có ăn được ít tiền,tối nay để đệ
+                khao đại ca ăn thịt uống rượu nha! <br><br>Nghe câu nói này Chu Phát mới hoà hoãn đi chút,ánh mắt đảo
+                nhẹ nhìn đệ đệ mình <br><br>- hừ ….thật không? Ăn được nhiêu? <br><br>- 400 kim hồn tệ! <br><br>- nhiều
+                vậy! Hắc hắc đệ đệ này ta nói đệ được nhiều tiền vậy sao chỉ bao ta ăn thịt uống rượu vậy?- gác tay
+                choàng qua vai Long Phi vỗ vỗ,ánh mắt Chu Phát biến hoá nhướng nhướng,thái độ lồi lõm kèo nèo thêm cái
+                gì đó<br><br>- Cái này …!!!ưm … Đại ca …cũng được nhưng mà …gọi một cô nương thôi được không? <br><br>-
+                cái gì? Ta bao che cho ngươi còn bị người hại ra thê thảm thế này mà giờ ngươi trả giá với đại ca à!
+                -Chu Phát lớn tiếng giảy nảy quên béng Triệu Đại chưa đi xa <br><br>- suỵt ……! -Long phi giơ tay che
+                miệng Chu Phát<br><br>Sở dĩ Long Phi nói thế vì hắn sợ rồi lần trước hắn cũng bị dụ đi Tác Mộng Lâu cùng
+                với ca ca mình,mà tên này hể có chút rượu là vung tay quá trán gọi cả 4 cô nương vào hầu hạ làm hắn trả
+                tiền mà lòng đau như cắt <br><br>Kịch! Bước chân Triệu Đại đột ngột dừng bước,thính lực của một Chiến
+                Thú Sư đệ tứ tốt như thế nào chứ?,làm sao có thể lọt khỏi tai ông<br><br>- Long Phi qua đây! <br><br>-
+                Nghe nói hồi chiều ngươi cá cược ăn được nhiều tiền lắm đúng không? <br><br>Nghe câu hỏi này Long Phi
+                lẫn Chu Phát đều teo trong lòng,thầm nghĩ thôi xong,Chu Phát cáo hơn giơ giơ tay lắc lắc nhẹ ý bảo Long
+                Phi nói ít thôi <br><br>Huynh đệ hiểu ý Long Phi liền nói <br><br>- Ít à gia gia có 200 à! <br><br>- này
+                thì láo! -cốp ….cốp ….khí lực tăng mạnh hơn sau từng cái cốc đầu Long Phi <br><br>- các ngươi nói gì
+                tưởng ta không nghe à? Xét cho cùng tiền của các ngươi ta không lấy nhưng ngươi trộm trứng chiến thú của
+                ta đem làm vật cá cược mới ăn được nhiều tiền thế,xét cho cùng tuổi trẻ cầm tiền nhiều thế làm gì? 4 cô
+                lận à? Tuổi trẻ khí thịnh nhở? Xét cho cùng ….!!!<br><br>- thôi ….gia gia con nộp cho người! -Long Phi
+                cắt ngang để thôi gia gia đứng xét cho cùng …đến sáng mai <br><br>Khuôn mặt bí xị móc ra 400 kim tệ hai
+                tay Long Phi có chút run rẩy không phải vì hắn sợ mà là hắn tiếc,đau lòng chết đi được phải cực khổ lắm
+                hắn mới kiếm được nhiêu đó ai ngờ …..<br><br>- Tốt ….! Ta giữ dùm cho! -Triệu Đại âm trầm cười mà theo
+                Long Phi đó là nụ cười xảo trá hèn mọn nhất hắn gặp trong ngày <br><br>- Cho 2 ngươi đi ăn cơm vì đã
+                thành thật giao nộp! Ta với Mộng Nhi đi có việc lát về! <br><br>Nói xong không chờ hai tên phản ứng
+                Triệu Đại đã nắm tay kéo Mộng Nhi đi,xa xa vang vọng lại câu nói của Triệu Đại <br><br>- Mộng Nhi ngoan
+                muốn ăn gì nè gia gia mua cho con! Ngày mai khỏi nấu cơm đi 400 kim hồn tệ ông cháu mình đi ăn tiệm 1
+                tuần cũng còn dư<br><br>- Nhưng không nấu cơm vậy 2 ca ca ăn gì? <br><br>- 2 thằng đó thừa khí lực
+                lắm,bốn lận mà!!! Nhịn 1 tuần không chết đâu! <br><br>Câu nói trực tiếp đánh thẳng vào tâm can Long Phi
+                và Chu Phát tan nát cõi lòng,một mất tiền một mất cơ hội ăn chơi,4 mắt nhìn nhau hung quang sáng quắc
+                hơn cả vì sao trời <br><br>- ta liều mạng với ngươi thằng nguuuuu! -đồng thanh đồng thủ lao vào nhau
+                thất điên bát đảo tả hữu chân tay loạn xà ngầu ….
+        </div>
+        <br>
+        <div align=center>
+            <a href="#top"><button type="button" class="btn-success">TOP</button></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer style="background-color: #ebccff">
+    <hr width="90%">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p>Trang Web Đọc Truyện Online | <a href="Trangchu.html">Trang chủ</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>

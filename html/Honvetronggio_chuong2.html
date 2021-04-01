@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap v4.3.1.min.css">
+    <script src="../js/jquery v3.3.1.min.js"></script>
+    <script src="../js/bootstrap v4.3.1.min.js"></script>
+    <link href="../css/khungtruyen.css" rel="stylesheet" type="text/css" />
+    <title>Hồn Về Trong Gió - Chương 2</title>
+    <script>
+        $(document).ready(function () {
+            $("#maunen").click(function () {
+                var maunen = $("#maunen").val();
+
+                if (maunen == "Xam")
+                    $(".container").attr('style', 'background-color: #c2c2d6 !important');
+                else if (maunen == "Sang")
+                    $(".container").attr('style', 'background-color: white !important');
+                else if (maunen == "Bg1")
+                    $(".container").attr('style', ' background-image: url("../img/Background1.jpg") !important; color : #ffffff ');
+                else if (maunen == "Bg2")
+                    $(".container").attr('style', ' background-image: url("../img/Background2.jpg") !important;  color : #ffffff ');
+                else
+                    $(".container").attr('style', ' background-image: url("../img/Background.jpg") !important;  color : #ffffff ');
+            });
+            $("#Size").click(function () {
+                var size = $("#Size").val();
+
+                if (size == "bth")
+                    $("p").attr('style', 'font-size :default;');
+                else if (size == "bth-dam")
+                    $("p").attr('style', 'font-size :default; font-weight:bold;');
+                else if (size == "20")
+                    $("p").attr('style', 'font-size :20px; !important');
+                else if (size == "20-dam")
+                    $("p").attr('style', 'font-size :20px; font-weight:bold; !important');
+                else if (size == "18")
+                    $("p").attr('style', 'font-size :18px; !important');
+                else
+                    $("p").attr('style', 'font-size :18px; font-weight:bold; !important');
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="Index.html">Truyện Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Truyenma.html">Truyện ma</a>
+                        <a class="dropdown-item" href="Kiemhiep.html">Kiếm hiệp</a>
+                        <a class="dropdown-item" href="Trinhtham.html">Trinh thám</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tác giả
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Nguyenngocngan.html">Nguyễn Ngọc Ngạn</a>
+                        <a class="dropdown-item" href="#">Kim Dung</a>
+                        <a class="dropdown-item" href="#">Người Khăn Trắng</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Trangchu.html">Truyện mới</a>
+                        <a class="dropdown-item" href="Trangchu.html">Truyện hot</a>
+                        <a class="dropdown-item" href="Nhieunguoixem.html">Nhiều người xem</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Tên truyện">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style=" background-image: url('../img/Background1.jpg') !important; color :#ffffff">
+        <br>
+        <div align=center>
+            <h4 style="color :red" id="top">HỒN VỀ TRONG GIÓ</h4>
+            <h5>Chương 2</h5>
+            <a href="Honvetronggio_chuong1.html"><button type="button" class="btn btn-success">Chương trước</button>
+            </a>
+            <a href="Honvetronggio_chuong3.html"><button type="button" class="btn btn-success">Chương tiếp</button> </a>
+            <form>
+                <br>
+                Nền:
+                <select name="dropdown" id="maunen">
+                    <option value="Xam">Xám</option>
+                    <option value="Sang">Sáng</option>
+                    <option value="Bg1" selected>Background 1</option>
+                    <option value="Bg2">Background 2</option>
+                    <option value="Bg3">Background 3</option>
+                </select>
+                | Size chữ:
+                <select name="dropdown" id="Size">
+                    <option value="bth" selected>Mặc định</option>
+                    <option value="bth-dam">Mặc định - In đậm</option>
+                    <option value="18">18</option>
+                    <option value="18-dam">18- In đậm</option>
+                    <option value="20">20</option>
+                    <option value="20-dam">20 - In đậm</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <br>
+            <p>Bà Phú đáp ngay :<br />
+                <br />
+                − Ma với quỷ cái gì ? Chắc đứa nào nó trêu mình !<br />
+                <br />
+                Tuy bà nói thế nhưng lòng bà bắt đầu thắc mắc , vì bà biết làm gì có đứa nào dám trêu chọc bà ở giữa
+                khuya khoắt như thế này ? Ban ngày còn chả dám huống chi là ban đêm. Đắn đo một chút bà hỏi :<br />
+                <br />
+                − Mà này ông ! Thế ông thấy đứa bé thật à ? ông có chắc không đấy ?<br />
+                <br />
+                ông Phú gắt nhẹ :<br />
+                <br />
+                − Bà ơi , tôi ngần này tuổi. Cả đời có biết ma là cái gì đâu. Nhưng mà hôm nay...hôm nay thì tôi thấy lạ
+                lắm....<br />
+                <br />
+                Bà Phú ngắt lời :<br />
+                <br />
+                − Tôi thì..tôi chỉ sợ ông ngáy ngủ , mắt nom không rõ thôi. Chứ ông nghĩ mà xem ăn xin gì...chả ai ăn
+                xin vào lúc nữa đêm như thế này ! huống hồ trẻ con thì giờ này ngủ say như chết ấy , lay không dậy nổi
+                chớ đừng nói là giờ này lang thang ngoài đường !<br />
+                <br />
+                ông Phú càng kinh sợ qua những lời vợ ông vừa nói thì rõ ràng là ma chứ không phải là người. Bà Phú bổng
+                nhổm dậy , bước nhanh xuống giường , ông Phú hốt hoảng hỏi :<br />
+                <br />
+                − Bà đi đâu đấy ?<br />
+                <br />
+                Bà Phú vừa xỏ guốc vừa đáp :<br />
+                <br />
+                − Tôi đi gọi cái Thuần<br />
+                <br />
+                Bà mạnh dạn bước ra tháo then cửa, khe khẻ hé mở , tiếng bản lề để lâu ngày rỉ sét , kêu lên kèn kẹt. bà
+                mở to mắt nhìn xa xa , dĩ nhiên không thấy ai , sương vẫn dày đặc trong không gian mờ tối. Bà bước hẳn
+                ra , đứng lại một lúc trên thềm không thấy động tỉnh gì , bà mới đi nhanh xuống bếp và gọi :<br />
+                <br />
+                − Thuần ơi !<br />
+                <br />
+                Chị người làm nằm trên cái giường kê sát cửa bếp, ngồi dậy vấn tóc và đáp :<br />
+                <br />
+                − Ớ ! Bà gọi con ạ ? Có việc gì sớm thế ạ ?<br />
+                <br />
+                Bà Phú ngồi xuống bên cạnh và hỏi :<br />
+                <br />
+                − Này , tối ngày hôm qua mày quên đóng cửa phải không ?<br />
+                <br />
+                Chị Thuần quả quyết :<br />
+                <br />
+                − Ấy chết ! Sao bà nói thế ạ ? Con đóng cổng , cài then cẩn thận lắm , quên làm sao được ạ ? Có cô Nhàn
+                làm chứng , lúc đó cô con vừa tắm ở dưới ao lên , đi ra cổng cùng với con. Bà không tin thì hỏi cô con
+                là biết ngay ấy.<br />
+                <br />
+                Bà Phú ngồi thừ người im lặng , chị người làm sốt ruột hỏi thêm :<br />
+                <br />
+                − Có cái gì thế bà ? Có việc gì thế bà ? Trộm vào nhà mình hở bà ? hay là có chuyện gì không ? Bà làm
+                con lo quá bà ạ !<br />
+                <br />
+                Bà Phú không muốn để chị người làm kinh hãi , sợ chị sẽ kể với hai đứa con , cho nên bà đứng dậy và bảo
+                :<br />
+                <br />
+                − Không , tao chỉ hỏi thế thôi !<br />
+                <br />
+                Rồi bà bước ra sân, vừa đi vừa nhìn xung quanh một lần nữa .<br />
+                <br />
+                ông Phú vẫn nằm nhắm mắt trên giường , nghe tiếng chân vợ vội lên tiếng :<br />
+                <br />
+                − Bà kể với cái Thuần ấy à ?<br />
+                <br />
+                − Không , tôi chỉ hỏi nó là tối hôm qua nó có đóng cổng hay không thôi.<br />
+                <br />
+                − Rồi nó bảo sao ?<br />
+                <br />
+                − Nó quả quyết là nó có đóng , có cả cái Nhàn ra cùng đóng cổng với nó.<br />
+                <br />
+                Dứt lời , bà mén vùng chui vào , ngả người nằm xuống và nói bâng quơ :<br />
+                <br />
+                − Lạ thật đấy , tôi thì tôi vẫn cứ cho là ông quáng gà chứ làm gì có đứa bé con nào ?<br />
+                <br />
+                ông Phú đã bình tĩnh trở lại , ông gắt nhẹ :<br />
+                <br />
+                − Ừ thì cứ cho là tôi nhìn lầm đi. Nhưng cả hai lần nó gõ cửa , bà đều nghe thấy , chứ nào phải riêng
+                tôi ? hỏi bà ai gõ mới được chứ ? Đây nhé , vừa nghe tiếng gõ cửa bà chạy ra ngay lập tức , mà không
+                thấy ai , tôi hỏi bà cái sân nhà mình nó trống hốc ấy. Giả như có đứa nào nó cố ý trêu tôi với bà , thì
+                nó núp vào đâu ?Nó vừa gõ cửa , bà ra ngay cơ mà ! Người mà chạy nhanh đến thế hay sao ? Bà thử nghĩ xem
+                !<br />
+                <br />
+                Nghe những lời phân tích ấy , bà cho là chồng hoàn toàn có lý , buộc miệng nói theo :<br />
+                <br />
+                − Ờ , sân nhà mình thì làm gì có chỗ núp ông nhỉ ?<br />
+                <br />
+                ông Phú càng tin là mình đã gặp ma , rồi từ đó hai người im lặng nằm bên nhau , mỗi người theo đuổi một
+                ý nghĩ. Mãi cho đến khi gà trong xóm rộn rã gáy khắp lượt , tiếng bước chân, tiếng nói chuyện huyên náo
+                của dân làng kéo nhau ra đồng trên con đường đất rộng chạy ngang trước nhà. ông Phú mới mệt mỏi ngồi dậy
+                ra thềm đứng nhìn khoảng sân gạch đang sáng dần trong ánh bình minh.<br />
+                <br />
+                Mặt trời lên, làm ông thấy tỉnh táo hẳn , không còn sợ hãi như trong đêm. ông bước xuống sân thong thả
+                đi ra cổng , và quả nhiên thấy cánh cổng vẩn còn khép kín , cài then trong với chiếc khóa đồng to bản
+                vẩn nằm im ở vị trí thường lệ. Nhà ông từ mấy đời vì của cải khá nhiều nên xây tường bao quanh, và đêm
+                đêm bao giờ cũng đóng then để đề phòng trộm cắp. Cổng khóa có nghĩa là người lớn không hề vào được ,
+                huống hồ là đứa con nít ba bốn tuổi. ông thơ thẩn quay vào , đi quanh một vòng.<br />
+                <br />
+                Mặt trời lấp ló sau rặng tre , chiếu những tia nắng ban mai rực rỡ , in bóng ông chạy dài in trên nền
+                gạch. ông bước lên hiên, uể oải ngồi xuống bậc thềm ngay chỗ sáng nay ông đúng nói chuyện với đứa bé lạ
+                mặt. Con mèo đen lấm lét bước theo , rồi leo lên nằm trên đùi ông.<br />
+                <br />
+                Bà Phú từ dưới bếp đi lên bưng khay trà toan bước vào nhà để đặt lên bàn cho chồng như thường lệ. Nhưng
+                ông Phú vẫy bà , chỉ tay xuống sân và nói :<br />
+                <br />
+                − Chỗ này nè bà ! Nó đứng ngay chỗ này này.<br />
+                <br />
+                Bà Phú đặt khay trà trên hè và cũng ngồi xuống bên cây cột gỗ lim. Bà lật hai cái cốc thủy tinh rồi rót
+                nước trà , hơi nóng bốc lên nhè nhẹ. ông Phú có thói quen sáng thức dậy là phải uống ngay một cốc nước
+                trà thật nóng và thật đặc trước khi ra hông nhà bếp xúc miệng rửa mặt. Nhìn nét ưu tư trong ánh mắt
+                chồng , bà Phú tự hỏi :<br />
+                <br />
+                − Hay là thật sự có đứa bé hàng xóm nữa đêm lẻn vào chọc ghẹo , cốt để làm cho vợ chồng bà sợ ? Trẻ con
+                làng này thì có thiếu gì đứa quấy phá thiên hạ.<br />
+                <br />
+                Nghĩ thế , bà hỏi :<br />
+                <br />
+                − Này , nó...nó...con cái nhà ai ? ông thấy mặt mũi nó ra làm sao ? ông có nhớ nó không ?<br />
+                <br />
+                − Nào tôi có biết. Bây giờ nghĩ lại tôi thấy chắc một điều là nó không phải là đứa bé ăn xin. Con nhà ăn
+                mày làm gì có quần áo trắng tinh như thế ! Với lại bà nói đúng , bố mẹ nào mà xui con đi ăn xin mà lại
+                đập cửa nhà người ta giữa nữa đêm như thế. Người ta đánh cho què chân chứ lị !<br />
+                <br />
+                Tất cả những nhận xét của ông Phú , thật ra bà Phú đã nghĩ đến từ nãy đến giờ , nhưng không muốn nói ra
+                sợ làm chồng càng thêm sợ , bà chỉ khẻ gật đầu tỏ vẻ đồng ý , ông Phú lại thêm :<br />
+                <br />
+                − Bà ạ , tôi vừa ra coi lại ngoài cổng , thì cổng vẩn còn khóa<br />
+                <br />
+                Bà Phú bưng cốc nước nóng xoay xoay trên tay quay sang nhìn chồng. Một người bản tính hung hăng như
+                chồng bà mà từ lúc nhìn thấy đứa bé lạ mặt trong đêm khuya , bổng dưng biến thành con người khác với
+                những sợ sệt không che dấu nổi , thì chắc hẳn đứa bé ấy có cái ma lực gì ghê gớm lắm. Có thể nó là một
+                oan hồn từ khu nghĩa trang ngay sau vườn nhà bà hiện về chăng ? Nhưng bà lại lắc đầu gạt đi vì bà nhớ
+                lại 20 người chôn sau nhà bà không ai chết trẻ. Đó là điều làm cho bà vẫn còn ngờ ngợ , nữa tin nữa
+                không tin. Bà phân vân hỏi chồng :<br />
+                <br />
+                − Ý ông thì....thì ông nhất định cho rằng đứa bé ấy nó...nó...không phải là người à ?<br />
+                <br />
+                − Ma chứ không phải là người. Bà nhớ lại mà xem , có bao giờ con mèo nhà mình nó lồng lộn như đêm hôm
+                qua đâu ? Hễ nó gào lên, là lập tức có tiếng gõ cửa. Giống mèo nó nhận được ma ấy bà ạ ! Bà không nghe
+                người ta kể là quỷ nhập tràng hay sao ?<br />
+                <br />
+                − Có , có nghe ! Nhưng mà quỷ nhập tràng nghĩa là quan tài người chết vẫn quàng trong nhà chưa đem chôn
+                , nếu như mà có con mèo đen nó nhảy qua thì quan tài sẽ đứng bật dậy, rồi nắp quan tài bung ra , rồi
+                người chết đuổi theo con mèo. Tôi thì tôi nghe người ta kể như thế.<br />
+                <br />
+                Bất giác , ông Phú cuối xuống nhìn con mèo đen của mình đang nằm bên cạnh đùi ông. Và tự dưng ông thấy
+                rờn rợn vì biết đâu nó chẳng biến thành tinh khi gặp quan tài người chết. Bà Phú uống ngụm nước , đặt
+                lên , rồi trầm ngâm tiếp :<br />
+                <br />
+                − ..Tôi , thì tôi về ở với ông hơn hai mươi mấy năm rồi trong cái căn nhà này , chưa hề nghe nói nhà
+                mình có mà bao giờ. Nhưng mà hôm nay nếu ông tin là có ma, thì để tôi bảo cái Thuần nó chạy đi mời Thầy
+                , Thầy Lĩnh Quang ở bên Xuân Diễn ấy. Ngoài chợ người ta cứ đồn là Thầy Lĩnh Quang cao tay lắm. Thầy sai
+                được cả âm binh và có phép mỡ mả chị thằng Trùng ấy. Để tôi thỉnh Thầy về cúng kiến xem sao, đuổi hồn ma
+                đi khỏi quấy rầy nhà mình ông nhé.<br />
+                <br />
+                ông Phú giơ tay ngăn lại :<br />
+                <br />
+                − Hẳng khoan bà , tôi không muốn cái chuyện này ầm ỉ lên. Từ từ xem thế nào đã. Cần thì cũng phải mời
+                nhưng thư vài hôm nữa xem sao.<br />
+                <br />
+                Bà Phú đồng ý ngay:<br />
+                <br />
+                − Thì tôi sợ ông lo quá rồi thành bệnh nên tôi mới đề nghị ông như thế , chứ thật ra tôi đâu muốn chuyện
+                này nó lan ra ngoài cho thiên hạ biết đâu. Miệng đời nó ác dộc lắm ! Người ta lại bảo là nhà mình thất
+                đức bị trả quả báo.<br />
+                <br />
+                Hai chữ thất đức , bà Phú nhấn mạnh để ám chỉ chính ông chồng những năm tháng đã qua. ông Phú dường như
+                cũng biết ý vợ nên chớp mắt nâng ly trà hớp một ngụm lớn rồi không nói gì. Bà Phú liếc mắt nhìn chồng ,
+                thấy ông đã tỉnh hẳn chứ không lạnh người như trong đêm. Tuy vậy ánh mắt ông vẫn nặng trĩu ưu tư và da
+                mặt sáng nay chợt xanh xao như người sốt rét lâu năm. Để trấn an ông , bà quay về với luận ngữ cũ hy
+                vọng giúp chồng quên hẳn nổi sợ hãi vừa xảy ra , bà bảo :<br />
+                <br />
+                − Trời ơi , đêm qua ông làm tôi sợ quá , tôi tưởng ông lên cơn sốt rét.<br />
+                <br />
+                ông Phú gật đầu rồi nói :<br />
+                <br />
+                − Bà nhớ đấy nhé , bà đừng dể hở cái câu chuyện nhà mình cho người ngoài nghe đấy nhé ! Con Thuần , cái
+                Nhàn , thằng Hoành , bà không được nói với chúng nó.<br />
+                <br />
+                Bà Phú đồng ý ngay , bà nhắc lại :<br />
+                <br />
+                − Với lại đã chắc gì là ma ? ông bảo sáng nay ông nom thấy đứa bé đứng ở đây xin cơm , nhưng mà khi tôi
+                mở cửa ra , tôi chả thấy đứa bé nào cả. Tôi thì tôi chỉ sợ lúc ấy ông ngái ngủ , mắt nhắm mắt ngủ , trời
+                lại lắm sương mù cho nên ông nom cái nọ nó xọ ra cái kia chăng ?<br />
+                <br />
+                ông Phú cũng mong như thế , mong rằng hình ảnh đứa bé sáng nay ông thấy đứa bé trước cửa nhà ông cũng
+                như người đàn bà đứng ngoài cổng , đều chỉ là ảo giác. Nhưng rõ ràng không phải , ông nom thấy thật ,
+                ông ônở nụ cười héo hắt bảo vợ :<br />
+                <br />
+                − Tôi là chúa ghét chuyện nhảm nhí , ghét những chuyện mê tín dị đoan , bà thì còn hay tin vớ vẩn chứ bà
+                có thấy tôi tin ma quỉ bao giờ ? Ấy thế mà bây giờ chính tôi lại gặp.<br />
+                <br />
+                ông vừa dứt lời thì từ dưới bếp , chị người làm và hai đứa con cùng kéo lên, cái Nhàn hơn 20 tuổi , con
+                gái cưng của bà Phú. Thằng Hoành 16 tuổi , học chữ Quốc ngữ hết lớp ba bậc Tiểu học thì trường làng
+                không còn lớp cho nó tiếp tục nên đành quanh quẩn ở nhà. Nhàn ngồi xuống bên cạnh mẹ và hỏi một cách lo
+                lắng :<br />
+                <br />
+                − Nhà có việc gì thế hở mẹ ? Đêm qua có trộm hay sao mà sáng nay con thấy mẹ xuống bếp đánh thức chị
+                Thuần sớm thế ?<br />
+                <br />
+                ông Phú đưa mắt nhìn vợ làm hiệu , bà Phú vội xua tay phân trần :<br />
+                <br />
+                − Trộm đâu mà trộm , mẹ chỉ hỏi chị Thuần là có quên khóa cổng hay không thôi.<br />
+                <br />
+                Cái Nhàn thắc mắc hỏi :<br />
+                <br />
+                − Ơ...nhưng mà rõ ràng con nghe tiếng bố nói chuyện với ai ngoài hè cơ mà ? Lúc đó con giật mình thức
+                dậy , con tính con chạy ra con thấy mẹ chạy xuống bếp gọi chị Thuần.<br />
+                <br />
+                Bà Phú cười đẩy con :<br />
+                <br />
+                − Bố mày mê ngủ đấy chứ có nói chuyện với ai đâu ! Chuyện vãn gì nữa đêm vậy ?<br />
+                <br />
+                Thằng Hoành ngồi xuống bên cạnh chị , chăm chú theo dõi nhưng không nói lời nào , chị người làm lên
+                tiếng đổi đề tài :<br />
+                <br />
+                − Hôm nay bà với cô Nhàn có đi chợ không ạ ? Để con mang quang gánh ra cho bà.<br />
+                <br />
+                Bà Phú quay sang hỏi con gái :<br />
+                <br />
+                − Đi hay ở nhà con ?<br />
+                <br />
+                Nhàn ngạc nhiên nhìn mẹ và đáp :<br />
+                <br />
+                − Đi chứ mẹ ! Chợ phiên mà ! Mẹ bảo là mẹ mua vải may cho con và thằng Hoành mỗi đứa hai cái áo cánh mà
+                !<br />
+                <br />
+                Bà Phú thở dài :<br />
+                <br />
+                − Ờ...ừ...thì đi , nếu đi thì phải đi cho sơm con ạ. Hôm nay sương nhiều , chốc nữa nắng to phải
+                biết.<br />
+                <br />
+                Rồi bà quay sang chồng :<br />
+                <br />
+                − Thế ông có cần mua cái gì không ?<br />
+                <br />
+                ông Phú uể oải đáp :<br />
+                <br />
+                − Bà xem trong tủ có còn chè mạn sen không ? Hết thì mua cho tôi mấy gói.<br />
+                <br />
+                Bà Phú đứng dậy bước vào nhà và nói :<br />
+                <br />
+                − Ừ , để tôi xem coi<br />
+                <br />
+                Rồi bà giục con gái chuẩn bị lên đường , bà bảo chị người làm :<br />
+                <br />
+                − Lấy cái thúng được rồi. Có mua gì nhiều đâu mà cần quang với gánh.<br />
+                <br />
+                Chị Thuần và Nhàn xuống bếp , thằng Hoành ra vườn sau xem tổ chim trên cây bưởi , chỉ còn mình ông Phú
+                ưu tư ngồi trên<br />
+                <br />
+                thềm nhìn ra cổng , không nói lời nào. Nổi lo sợ trong đêm gần như tan biến hết dưới ánh sáng mặt trời.
+                ông ngẩm nghĩ mãi về cuộc đời , ông không hiểu tại sao ông lại gặp ma , hay đúng hơn là tại sao ma lại
+                đến với ông ?<br />
+                <br />
+                Những câu chuyện về thế giới bên kia , về oan hồn vươn vấn dương gian. Ai mà chả từng nghe kể , mà chỉ
+                toàn là tưởng tượng , là hoang đường , chứ có ai tận mắt gặp phải hồn ma bao giờ ? Cả đời ông vẫn tin
+                như thế cho đến đêm qua thì suy nghĩ của ông rẻ hẳn sang một khúc quanh khác. Chuyện tiếp xúc với cõi âm
+                là có thật , chứ chẳng phải là ảo giác thêm mắm thêm muối cho hấp dẫn người đời. ông mong rằng câu
+                chuyện sẽ kết thúc ở đây , đừng tái diễn thêm một lần nào nữa. ông thở mạnh , vói tay lấy cái điếu cày ,
+                rồi tình cờ ngước lên ngọn cây soan mọc ở đầu nhà , trên một nhánh khác có con quạ đen đậu từ lúc nào ,
+                mắt đăm đăm nhìn ông. ông vung tay đuổi , con quạ vẫn lì lợm đứng tại chỗ , ông tìm cục đá nhỏ quăng
+                lên, con quạ vỗ cánh đảo một vòng rồi trở về chổ cũ và vẫn nhìn ông soi mói , khiến ông hoang mang, đứng
+                dậy bỏ vào nhà.<br />
+                <br />
+                Một ngày trôi qua rất nhanh , buổi trưa ông thơ thẩn đi bách bộ trên thềm nhà dưới mái hiên dịu mát. Bà
+                Phú và Nhàn đi chợ chưa về , con mèo đen đang lửng thửng bước theo ông trên trên hè bổng dưng thét lên
+                rồi chạy vụt ra cái cổng chính , rồi cứ thế nó nhảy chồm lên cào vào cánh cổng như đang quần thảo với
+                một kẻ thù vô hình nào đó rất hung dữ. ông Phú đứng trên nhà , toàn thân nổi da gà , trố mắt nhìn ra dù
+                không thấy gì ngoài con mèo một mình gầm thét và cào cấu.<br />
+                <br />
+                Một lúc sau , con mèo ngừng kêu, đứng lặng im trước bụi tre một lúc rồi quay vào với ông. ông thở hổn
+                hển , ngồi xuống bậc thềm xoa lưng nó bởi biết rằng hồn ma vừa hiện vào cổng trước nhà ông , nhưng có lẽ
+                vào ban ngày , ông không thấy được. Tuy nhiên , nhìn vào cảnh tượng ấy , ông cũng thấy rõ là người xưa
+                nói không sai : chung quanh người sống , có biết bao nhiêu hồn người chết đang lởn vởn bên cạnh , mà mắt
+                trần gian không trông thấy được .<br />
+                <br />
+                Biết đâu trong lúc này, ông đang ngồi đây thì hai cái bóng ma xa hai mẹ con xa lạ đó cũng đang ngồi sát
+                bên ông mà ông không biết. ông hoang mang nghĩ ngợi mãi cho đến lúc vợ ông và cô con gái đi chợ về , ông
+                mới gượng cười đứng dậy , và cũng không kể cho ai nghe câu chuyện con mèo vừa đánh nhau với ma ở ngoài
+                cổng.<br />
+                <br />
+                Hiện tượng quái dị ấy tuy có làm ông sợ , nhưng dù sao đi nữa nó cũng diễn ra vào ban ngày , ông không
+                hãi hùng lắm. ông chỉ lo đêm nay, đứa bé con mặc đồ trắng sẽ lại gõ cửa tìm ông. Cho nên buổi chiều ,
+                ông lặng lẽ ra nghĩa trang sau nhà thắp nhang từng ngôi mộ. Thành khẩn cầu xin tổ tiên phù hộ cho ông
+                qua cơn khủng hoảng. Có nghĩa là đừng để hồn ma đứa bé tìm ông một lần nữa.<br />
+                <br />
+                Lần đầu tiên trong nghĩa trang của chính gia đình ông , mà ông cảm thấy cái không khí rờn rợn , vương
+                đầy tử khí . ông vừa nhắm mắt để khấn nguyện thì chợt linh cảm từ phía sau có người nào đó đang nhìn
+                ông, ông quay đầu lại thì chẳng thấy ai. ông nhắm mắt đọc kinh tiếp thì lại thấy rõ có ai đứng nhìn lén
+                mình , ông quay lại nữa , thì chợt nhận ra con quạ đen đậu trên cành đa chỉ cách ông có mấy thước , ông
+                giựt mình , nhặt cục đá ném lên , con quạ kêu lên mấy tiếng ai oán rồi bay về chờ ông trên nhánh cây
+                soan bên hông nhà. Buổi tối ông ăn qua loa mấy chén cơm rồi vào buồng vì ông sợ bóng tối ngoài sân cũng
+                như trong các lùm cây. Lên giường nằm , ông trằn trọc thao thức mãi. Bà Phú thắp nhang trên bàn thờ rồi
+                chìu chồng cũng lên giường sớm và con mèo đen theo thói quen, nhảy lên cái ghế dành cho nó bên cạnh
+                giường.<br />
+                <br />
+                Bà Phú kể cho chồng nghe các thứ chuyện vặt vãnh ngoài chợ , tránh nhắc đến chuyện đêm qua, để khỏi làm
+                chồng thêm sợ. ông Phú nghe vợ nói chuyện, cũng ậm ừ cho qua, nhưng rõ ràng ông không chú ý vì đầu óc
+                vẫn đang vướng bận , cố gạt đi mà không gạt nổi. Gần nữa đêm bà Phú mệt mỏi ngủ mất trong khi ông vẫn
+                còn trăng trở , hết xoay bên phải lại đổi sang bên trái. Nằm lâu ông buồn tiểu lắm , nhưng không dám đi
+                một mình , mà chẳng lẽ lại đánh thức vợ dậy để rũ vợ cùng đi chung với mình. Nhà cầu nằm mãi sau bếp ,
+                ông tưởng tượng giờ này ông phải băng ngang mảnh sân ra đó , bất chợt đang đi mà hai cái bóng trắng lao
+                ra chắn lối , thì chắc chắn có thể làm ông kinh sợ đến ngất đi được.<br />
+                <br />
+                ông nén tiếng thở dài , nhắm mắt lại cố dỗ giấc ngủ. Bên ngoài trời đã khuya lắm , ông gnhe tiếng sương
+                đêm từng giọt đều đặn từ mái ngói đến sân gạch , ông kéo tấm chăn phủ kín trên mặt rồi cảm thấy rất khó
+                chịu vì ngộp thở. Không gian hoàn toàn tỉnh mịch , trời đứng gió , ngoài vườn bao nhiêu cây lá không một
+                chút lay động.<br />
+                <br />
+                ông hồi tưởng lại bao nhiêu năm sống ở làng này , từ thuở thiếu thời , ông đã lang thang một mình trên
+                đường khuya , dù là đêm trăng sáng hay đêm tối trời , có bao giờ biết sợ là gì ? Rồi sau này khi lập gia
+                đình , có địa vị trong làng xóm , cũng biết bao đêm ông đi uống rượu ở nhà người này, người kia. Hoặc
+                khi ra sân đình xem hát chèo, rồi một mình trở về trên những khúc đường vắng lặng , chỉ có tàn tre hai
+                bên rũ xuống , chuyện ma quỷ có khi nào làm cản trở bước chân lịch lãm của ông đâu ? Ấy thế mà từ đêm
+                qua đến giờ, hễ nhìn thấy bóng đêm là ông run sợ. Vườn nhà ông cây trái xum xuê , từ nay ông chỉ dám ra
+                chơi ban gnày mà thôi.<br />
+                <br />
+                ông nhớ có lần nghe người ta bảo ma lúc nào cũng hiện diện quanh ta, nhưng chỉ người nào ma muốn cho
+                thấy , thì mới thấy được. ông tự hỏi tại sao ma lại chọn ông để hù dọa ?. ông nghĩ mãi không tìm ra lý
+                do. Một lúc sau , ông Phú vừa lật người nằm ngửa , thì bổng con mèo bên cạnh ông kêu rú lên , lao vọt
+                qua cửa sổ , và chạy vùn vụt trên mái nhà , tiếng gào thét như xé màn đêm. Sau đó có tiếng gỏ cửa phía
+                trước , ông Phú giật thót người, hất mạnh tấm chăn ra khỏi , ngóc đầu dậy lắng nghe. Vẫn những tiếng cọc
+                cọc giống hệt đêm qua.<br />
+                <br />
+                ông hít thở chờ đợi , tiếng gõ vang lên như giục giã , ông đưa mắt nhìn vợ , hy vọng là bà cũng nghe
+                thấy. Nhưng bà vẫn đang say giấc nồng , hơi thở vẫn đang đều đều , chứng tỏ bà vẫn chưa thức giấc. ông
+                Phú khẻ lay vai vợ , bà Phú trở người nằm nghiêng , úp mặt vào tường , xoay lưng về phía ông. Tiếng gõ
+                cữa vẫn tiếp tục , tiếng mèo gào thê lương vẫn vang lên rộn rã, tiếng móng vuốt cào cào rin rít trên
+                cánh cửa gỗ. ông Phú như người say thuốc , như kẻ bị hớp hồn , nữa tỉnh nữa mê, mất hết tự chủ , tung
+                chăn bước xuống giường , thất thểu đi ra , ông tháo then ngang , đẩy rộng cánh cửa. Con mèo đen lao vọt
+                lại chân ông , cắn gấu quần ông , lôi thật mạnh , như cố ý kéo ông vào nhà. Nhưng ông cứ đứng yên như
+                người bị thôi miên...<br />
+                <br />
+                Cảnh cũng lại diễn ra y hệt như là đêm qua , trong màn sương nhạt , đứa con gái mặc quần áo trắng toát ,
+                mái tóc rũ xuống , che một phần khuôn mặt xanh xao , chià bàn tay xin :<br />
+                <br />
+                − Ông cho con xin bát cơm. Con đói quá !<br />
+                <br />
+                ông Phú đứng chết cứng như chôn chân xuống nền gạch , á khẩu không nói được lời nào. Xa xa ở cuối sân
+                sát cổng ra vào , ông lại thấy người đàn bà trẻ mặc đồ trắng , cất tiếng gọi :<br />
+                <br />
+                − Về con ơi , về với mẹ con ơi !<br />
+                <br />
+                ông Phú kinh hãi đến tột cùng , tiếng nói của cả hai mẹ con vừa trong , vừa lạnh như vọng về từ cõi âm.
+                Cả hai khuông mặt đều mờ ảo , ông không trông rõ , không nhận diện được. Đứa bé chìa tay khẩn khoảng
+                nhắc lại :<br />
+                <br />
+                − Xin ông bố thí cho con bát cơm , con đói lắm.<br />
+                <br />
+                Và ngay sau đó tiếng người mẹ từ ngoài cổng cũng cất lên :<br />
+                <br />
+                − Về con ơi , về với mẹ con ơi !<br />
+                <br />
+                Con mèo đen từ chân ông, lao về phía đứa bé. Lập tức đứa bé quay lưng và vụt mất. ông Phú chớp mắt mấy
+                cái và bừng tỉnh. Bấy giờ ông mới thấy ở cuối sân, hai mẹ con dắt nhau ra cổng . ông vẫn đứng run rẩy
+                tại chỗ như có ai níu chặt lấy đôi chân ông , cả phút sau mới hoàn hồn. ông toan bước vào nhà , thì một
+                bàn tay bấu mạnh trên vai ông , ông hét lớn quay đầu lại thì hóa ra vợ ông , bà hỏi :<br />
+                <br />
+                − Ông làm cái gì ngoài này thế ?<br />
+                <br />
+                ông Phú thở hồng hộc như người chạy đua đường trường , bà Phú dìu ông vào nhà , để ngồi ở ghế và vặn to
+                ngọn đèn dầu. Con mèo đen cũng theo vào , nhảy lên chỗ củ. Bấy giờ , bà Phú mới nhận ra nét nhợt nhạt
+                đẩm ướt mồ hôi trên khuôn mặt của chồng. Bà rót nước tro cho ông và bảo :<br />
+                <br />
+                − Ngồi xuống , ông ngồi xuống hẳng đi rồi uống cốc nước nóng này đi đã. Uống rồi cho tỉnh.<br />
+                <br />
+                Rồi bà lấy cái khăn vải máng ở đuôi giường lau mặt cho chồng. ông Phú uống cạn cốc nước , đòi thêm một
+                ly nữa , rồi run run bảo bà :<br />
+                <br />
+                − Bà....bà cầm đèn đi với tôi , tôi phải đi giải một cái đã.<br />
+                <br />
+                Bà Phú làm theo chồng. Lần đầu tiên sau hiền lành bạc nhược khác hẳn với thái độ hách dịch và hung bạo
+                thường ngày. Bà đi trước , giơ cao cái đèn soi bước , bà đẩy cái cánh cửa cho chồng bước ra, nhưng cánh
+                cửa vừa mở , ông đã kêu thét lên và lùi lại. Vì thấy hai cái bóng người đứng ngay trên thềm nhìn ông chờ
+                đợi. Bà Phú vội trách :<br />
+                <br />
+                − Cái gì mà ông cứ la ầm lên giữa đêm khuya vậy ? Làng xóm người ta kéo sang bây giờ.<br />
+                <br />
+                Hai bóng người đứng đó cùng lao lại đở ông vì đó là chị người làm và cô con gái. Chị Thuần lên tiếng
+                :<br />
+                <br />
+                − Ơ ! Con đây mà ông.<br />
+                <br />
+                ông Phú đặt bàn tay lên ngực , khò khè thở và mắng :<br />
+                <br />
+                − Chúng mày....chúng mày ra làm cái gì đây ? Tao cứ tưởng là ma.<br />
+                <br />
+                Cô con gái đáp :<br />
+                <br />
+                − Tại con đang ngủ , tự nhiên con nghe bố hét to quá à. Con vội lay chị Thuần dậy , chạy lên xem bố có
+                việc gì không ?<br />
+                <br />
+                Bà Phú buồn rầu bảo :<br />
+                <br />
+                − Thôi, đi ngủ hết đi. Mẹ rửa mặt cho tỉnh táo , từ hôm qua đến giờ cứ mê man, nói lung tung.<br />
+                <br />
+                Và bà bảo chị người làm :<br />
+                <br />
+                − Thôi , chị cũng đi ngủ đi , còn sớm lắm. Có cần gì thì tôi gọi ngay.</p>
+        </div>
+        <br>
+        <div align=center>
+            <a href="#top"><button type="button" class="btn-success">TOP</button></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer style="background-color: #ebccff">
+    <hr width="90%">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p>Trang Web Đọc Truyện Online | <a href="Trangchu.html">Trang chủ</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>

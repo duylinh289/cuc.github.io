@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap v4.3.1.min.css">
+    <script src="../js/jquery v3.3.1.min.js"></script>
+    <script src="../js/bootstrap v4.3.1.min.js"></script>
+    <link href="../css/khungtruyen.css" rel="stylesheet" type="text/css" />
+    <title>Con Ma Áo Đỏ - Chương 2</title>
+    <script>
+        $(document).ready(function () {
+            $("#maunen").click(function () {
+                var maunen = $("#maunen").val();
+
+                if (maunen == "Xam")
+                    $(".container").attr('style', 'background-color: #c2c2d6 !important');
+                else if (maunen == "Sang")
+                    $(".container").attr('style', 'background-color: white !important');
+                else if (maunen == "Bg1")
+                    $(".container").attr('style', ' background-image: url("../img/Background1.jpg") !important; color : #ffffff ');
+                else if (maunen == "Bg2")
+                    $(".container").attr('style', ' background-image: url("../img/Background2.jpg") !important;  color : #ffffff ');
+                else
+                    $(".container").attr('style', ' background-image: url("../img/Background.jpg") !important;  color : #ffffff ');
+            });
+            $("#Size").click(function () {
+                var size = $("#Size").val();
+
+                if (size == "bth")
+                    $("p").attr('style', 'font-size :default;');
+                else if (size == "bth-dam")
+                    $("p").attr('style', 'font-size :default; font-weight:bold;');
+                else if (size == "20")
+                    $("p").attr('style', 'font-size :20px; !important');
+                else if (size == "20-dam")
+                    $("p").attr('style', 'font-size :20px; font-weight:bold; !important');
+                else if (size == "18")
+                    $("p").attr('style', 'font-size :18px; !important');
+                else
+                    $("p").attr('style', 'font-size :18px; font-weight:bold; !important');
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="Index.html">Truyện Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Truyenma.html">Truyện ma</a>
+                        <a class="dropdown-item" href="Kiemhiep.html">Kiếm hiệp</a>
+                        <a class="dropdown-item" href="Trinhtham.html">Trinh thám</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tác giả
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Nguyễn Ngọc Ngạn</a>
+                        <a class="dropdown-item" href="#">Kim Dung</a>
+                        <a class="dropdown-item" href="#">Người Khăn Trắng</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Truyện mới</a>
+                        <a class="dropdown-item" href="#">Truyện hot</a>
+                        <a class="dropdown-item" href="#">Nhiều người xem</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Tên truyện">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style=" background-image: url('../img/Background1.jpg') !important; color :#ffffff">
+        <br>
+        <div align=center>
+            <h4 style="color :red" id="top">CON MA ÁO ĐỎ</h4>
+            <h5>Chương 2 - Giấc mơ kì lạ</h5>
+            <a href="Conmaaodo_chuong1.html"><button type="button" class="btn btn-success">Chương trước</button> </a>
+            <button type="button" class="btn btn-success" disabled="disabled">Chương tiếp</button>
+            <form>
+                <br>
+                Nền:
+                <select name="dropdown" id="maunen">
+                    <option value="Xam">Xám</option>
+                    <option value="Sang">Sáng</option>
+                    <option value="Bg1" selected>Background 1</option>
+                    <option value="Bg2">Background 2</option>
+                    <option value="Bg3">Background 3</option>
+                </select>
+                | Size chữ:
+                <select name="dropdown" id="Size">
+                    <option value="bth" selected>Mặc định</option>
+                    <option value="bth-dam">Mặc định - In đậm</option>
+                    <option value="18">18</option>
+                    <option value="18-dam">18- In đậm</option>
+                    <option value="20">20</option>
+                    <option value="20-dam">20 - In đậm</option>
+                </select>
+            </form>
+
+        </div>
+        <div>
+            <br>
+            <p>- Ơ, đây là đâu? -Tôi mở mắt ra nhìn khung cảnh xung quanh tối đen như
+                mực. Tôi từ từ đứng dậy và đưa tay ra lần mò xung quanh và vô tình đụng
+                phải cái gì đó rất giống bộ bàn ghế, hình như tôi đang ở trong lớp học.
+                Khi mắt tôi đã quen dần với bóng tối cũng là lúc ánh trăng chiếu xuống
+                qua cửa kính, bỗng nhiên tôi thấy có một bóng đen lướt nhanh qua cửa sổ:<br /><br />- Là ai vậy? mau ra
+                đây đi. - tôi nói<br /><br />"Mau.....cút.....khỏi.....đây....ngay...lập...tức..."<br /><br />Một tiếng
+                nói vang lên trong giọng nói lạnh lẽo của một người phụ nữ làm
+                cho không khí trở nên im lặng một cách đáng sợ, đột nhiên tôi có một cảm giác lạnh thấu
+                xương:<br /><br />"Biến...đi...mau...biến...đi"<br /><br />- Là ai vậy hả? - tôi nói trong cơn sợ
+                hãi.<br /><br />Đột nhiên lúc đó từ những vách tường có rất nhiều chất lỏng chảy ra, máu,
+                đích thực là máu rồi. Tiếng cười của người phụ nữ vang lên cộng thêm
+                tiếng bàn ghế bị xô đẩy khá mạnh rồi bỗng có
+                tiếng<br /><br />Bịch...<br /><br />Bịch...<br /><br />bịch...<br /><br />Bịch...<br /><br />Bịch...<br /><br />5
+                vật rơi xuống bốc lên một mùi hôi kinh khủng, hình như...đó là xác
+                người bị đánh đập khá mạnh, trên người ai nấy cũng bê bết máu, tôi lại
+                gần xem và ngã xuống khi kịp nhìn ra, đó...đó là 5 đứa cùng phòng với
+                tôi mà;<br /><br />- Này, tụi...tụi mày bị sao vậy?rốt cuộc cô đã làm gì
+                họ???- tôi điên tiết hét leenvaf quay lưng lại thì bắt gặp một người phụ nữ có mái tóc dài xõa ngang
+                lưng, khuôn mặt cô ta đầy máu, cô ta có cặp mắt hốc sâu và đôi môi thâm cười rộng đến mức khóe miệng cô
+                ta chạm đến hai vành tai, cô ta mặc một chiếc đầm đỏ chính xác hơn là một chiếc đầm trắng bị nhuộm bởi
+                máu.<br /><br />Cô ta bóp chặt cổ tôi và hét lớn:<br /><br />"CÚT ĐI NGƯƠI KHÔNG ĐƯỢC PHÉP ĐẾN ĐÂY MAU
+                CÚT ĐI"<br /><br />Cô ta cứ siết chặt cổ tôi cho đến khi tôi ngất lịm
+                đi.<br /><br />---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br /><br />-
+                KHÔNG -Tôi bật dậy hét toáng lên.<br /><br />- Cái gì vậy ba? giật mình à - Quân hết hồn
+                nói.<br /><br />- ác mộng hả? - Thằng Quang cũng xém rớt cái điện thoại đang cầm trên tay.<br /><br />-
+                à à, không có gì đâu, mà ba người kia đâu?<br /><br />- Họ ra ngoài rồi, lát họ về. - thằng Quang
+                nói.<br /><br />- ừm, mà tụi mày có biết...mà thôi ko có gì đâu - tôi xua tay<br /><br />- Có gì cứ hỏi
+                đi đừng ngại. - thằng Quân phát vào lưng tôi một cái rõ đau.<br /><br />- Ừ thì....<br /><br />Lúc đó
+                Phát, Vũ và Duy về:<br /><br />- tụi tao mua về rồi nè- 3 đứa đồng thanh <br /><br />- Đâu đâu??mau mang
+                lại đây -Quân<br /><br />- này cầm lấy. Ê người mới, lát ăn chung cho vui- thằng Phát ngoắc
+                đầu<br /><br />- Ừm, mà tên tao là nhật không phải là người mới - tôi lườm thằng Phát rồi dòm sang túi
+                đồ ăn<br /><br />- Tao biết chứ tại gọi vậy nghe cũng hay mà- Phát<br /><br />- Thôi, giờ tao với thằng
+                Quang đi nấu tụi mày ngồi chơi đi nhé - thằng
+                Quân nói rồi lôi thằng Quang đi làm thằng Quang chưa kịp ú ớ gì cả.<br /><br />Tôi ngồi dậy đi rữa mặt
+                và thở phào nhẹ nhõm, cũng may là lúc nãy chỉ là mơ nhưng nhìn nó cứ thật thật sao ấy. Tôi cũng ngay lập
+                tức dẹp ngay mấy
+                cái suy nghĩ đó và vui vẻ ra ngoài chơi với 3 đứa kai như chưa có chuyện gì xảy ra.</p>
+        </div>
+        <br>
+        <div align=center>
+            <a href="#top"><button type="button" class="btn-success">TOP</button></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer style="background-color: #ebccff">
+    <hr width="90%">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p>Trang Web Đọc Truyện Online | <a href="Index.html">Trang chủ</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>

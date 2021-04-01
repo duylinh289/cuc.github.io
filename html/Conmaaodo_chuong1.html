@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap v4.3.1.min.css">
+    <script src="../js/jquery v3.3.1.min.js"></script>
+    <script src="../js/bootstrap v4.3.1.min.js"></script>
+    <link href="../css/khungtruyen.css" rel="stylesheet" type="text/css" />
+    <title>Con Ma Áo Đỏ - Chương 1</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#maunen").click(function () {
+                var maunen = $("#maunen").val();
+
+                if (maunen == "Xam")
+                    $(".container").attr('style', 'background-color: #c2c2d6 !important');
+                else if (maunen == "Sang")
+                    $(".container").attr('style', 'background-color: white !important');
+                else if (maunen == "Bg1")
+                    $(".container").attr('style', ' background-image: url("../img/Background1.jpg") !important; color : #ffffff ');
+                else if (maunen == "Bg2")
+                    $(".container").attr('style', ' background-image: url("../img/Background2.jpg") !important;  color : #ffffff ');
+                else
+                    $(".container").attr('style', ' background-image: url("../img/Background.jpg") !important;  color : #ffffff ');
+            });
+            $("#Size").click(function () {
+                var size = $("#Size").val();
+
+                if (size == "bth")
+                    $("p").attr('style', 'font-size :default;');
+                else if (size == "bth-dam")
+                    $("p").attr('style', 'font-size :default; font-weight:bold;');
+                else if (size == "20")
+                    $("p").attr('style', 'font-size :20px; !important');
+                else if (size == "20-dam")
+                    $("p").attr('style', 'font-size :20px; font-weight:bold; !important');
+                else if (size == "18")
+                    $("p").attr('style', 'font-size :18px; !important');
+                else
+                    $("p").attr('style', 'font-size :18px; font-weight:bold; !important');
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="Index.html">Truyện Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Truyenma.html">Truyện ma</a>
+                        <a class="dropdown-item" href="Kiemhiep.html">Kiếm hiệp</a>
+                        <a class="dropdown-item" href="Trinhtham.html">Trinh thám</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tác giả
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Nguyenngocngan.html">Nguyễn Ngọc Ngạn</a>
+                        <a class="dropdown-item" href="#">Kim Dung</a>
+                        <a class="dropdown-item" href="#">Người Khăn Trắng</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Truyện mới</a>
+                        <a class="dropdown-item" href="#">Truyện hot</a>
+                        <a class="dropdown-item" href="Nhieunguoixem.html">Nhiều người xem</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Từ khóa..." aria-label="Tên truyện">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style=" background-image: url('../img/Background1.jpg') !important; color :#ffffff">
+        <br>
+        <div align=center>
+            <h4 style="color :red" id="top">CON MA ÁO ĐỎ</h4>
+            <h5>Chương 1 - Ngôi trường mới</h5>
+            <button type="button" class="btn btn-success" disabled="disabled">Chương trước</button>
+            <a href="Conmaaodo_chuong2.html"><button type="button" class="btn btn-success">Chương tiếp</button> </a>
+
+            <form>
+                <br>
+                Nền:
+                <select name="dropdown" id="maunen">
+                    <option value="Xam">Xám</option>
+                    <option value="Sang">Sáng</option>
+                    <option value="Bg1" selected>Background 1</option>
+                    <option value="Bg2">Background 2</option>
+                    <option value="Bg3">Background 3</option>
+                </select>
+                | Size chữ:
+                <select name="dropdown" id="Size">
+                    <option value="bth" selected>Mặc định</option>
+                    <option value="bth-dam">Mặc định - In đậm</option>
+                    <option value="18">18</option>
+                    <option value="18-dam">18- In đậm</option>
+                    <option value="20">20</option>
+                    <option value="20-dam">20 - In đậm</option>
+                </select>
+            </form>
+
+        </div>
+        <div>
+            <br>
+            <p>Tôi tên là Nhật, hiện tôi là một học sinh lớp 10, hôm nay là ngày tôi phải
+                chuyển trường. Ngôi trường mới của tôi tên là: trường thpt Quang Trung.<br /><br />Chiếc xe bus dừng lại
+                ngay trước công trường, tôi chao đảo bước xuống với
+                dáng vẻ như một tên say rượu, lúc đó có một người đi ra và dẫn tôi vào
+                trường, nhìn cách ăn nặc thì có vẻ ông ta là bảo vệ. Bước vào cổng
+                trường, tôi ngơ ngác nhìn xung quanh, hừm, khung cảnh cũng không đến nỗi nào trông cũng đẹp phết. Trước
+                mặt tôi hiện lên hai dãy cây xà cừ, dẫn
+                vào là một ngôi trương khá lớn, phía bên tay phải là kí túc xá nam còn
+                phía bên tay trái là kí túc xá nữ, đối diện kí túc xá nam là phòng hiệu
+                trưởng và phòng y tế. Ngôi trường này khá rộng và đẹp nhưng lại mang một vẻ gì đó rất u
+                ám.<br /><br />Bác bảo vệ dẫn tôi lên kí túc xá và dừng lại tại phòng số 77:<br /><br />- chìa khóa
+                phòng - ông bảo vệ lạnh nhạt nói.<br /><br />- Dạ cháu cảm...... - tôi chưa kịp nói xong thì ông bảo vệ
+                quay lưng bỏ
+                đi, mấy đứa phòng khác thì nhìn tôi với ánh mắt tỏ vẻ khó chịu lắm.<br /><br />Không nghĩ vu vơ gì nữa,
+                đang mệt vì say xe nên tôi mở cửa phòng ra, đập vào
+                mắt tôi là một cảnh tượng ko thể nói được nữa: một bãi chiến trường cộng thêm 5 con người lạ
+                hoắc.<br /><br />- A cậu là người mới chuyển đến hả? Mau vào đi.- một người trong đám đó lên
+                tiếng.<br /><br />- ơ... à, ừ- tôi ngập ngừng nói và cũng đã hiểu, chắc họ là bạn cùng phòng với
+                tôi.<br /><br />5 con người kia đều ngừng mọi hoạt động, ngồi dậy và đưa cặp mắt nhìn tôi như một sinh
+                vật lạ vừa rơi xuống trái đất:<br /><br />- Mặt tôi có dính gì hả?- tôi cau mày hỏi.<br /><br />- À, ko
+                phải đâu, thật tình đón tiếp người mới như thế này thì quả là
+                ngại thật, à phải rồi tớ là Quân học lớp 10A1 còn đây là Phát, Duy, Vũ
+                và Quang. Bọn tớ học cùng lớp, còn cậu?<br /><br />- ờ...ờ tôi là Nhật, cũng học lớp 10A1 -tôi trả lời
+                qua loa<br /><br />- Sao nhìn cậu có vẻ mệt vậy? -Duy hỏi<br /><br />- chắc do say xe ấy mà -Vũ nhìn tôi
+                cười cười <br /><br />- Êy, chúng mày bớt "cậu cậu tớ tớ" đi được không? tao nổi da gà rồi nè- Phát ớn
+                lạnh nói<br /><br />- hừm,tao cũng thấy ớn ớn, gọi vậy đc ko Nhật - Quân gãi đầu nhìn tôi<br /><br />- ừ
+                sao cũng đc đây là giường tao đúng ko? chúng mày ngủ ngon- tôi nằm
+                bẹp dí xuống giường, chúng nó chỉ nhìn tôi rồi tiếp tục quay về việc của mình, riêng tôi lại nghĩ:" Ngôi
+                trường này lạ thật, cả ông bảo vệ và
+                mọi người ở quanh đây cư xử cũng kì nữa, mấy người cùng phòng thì...thôi ko nghĩ nữa."- tôi lập tức dẹp
+                ngay mấy cái suy nghĩ đó và chìm trong
+                giấc ngủ ngon lành.<br /><br />hết chương 1</p>
+        </div>
+        <br>
+        <div align=center>
+            <a href="#top"><button type="button" class="btn-success">TOP</button></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer style="background-color: #ebccff">
+    <hr width="90%">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p>Trang Web Đọc Truyện Online | <a href="Trangchu.html">Trang chủ</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>

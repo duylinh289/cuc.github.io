@@ -1,0 +1,35 @@
+*{
+	padding:0;
+	margin:0;
+
+	
+}
+#all{
+	margin:0 auto;
+	width:800px;
+	padding : 0px;
+	
+}
+body{
+	border :2px solid green;
+}
+#tieude{
+	text-align : center;
+	width : 100%;
+	float : center;
+	padding-top:5px;	
+	border-bottom : 1px solid green;
+}
+#menu{
+	float : left;
+	padding-left : 10px;
+	width : 20%;
+}
+#menu ul li{
+	list-style : none;
+}
+.body{
+	float : left;
+	padding-left : 10px;
+	
+}

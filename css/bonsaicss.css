@@ -1,0 +1,9 @@
+*{
+    font-weight: bold;
+}
+h2{
+    color: red;
+}
+input{
+    border-style: outset;
+}
